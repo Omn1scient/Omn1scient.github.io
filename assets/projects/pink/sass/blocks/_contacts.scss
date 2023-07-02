@@ -1,0 +1,82 @@
+.contacts {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.contacts__wrapper {
+  @media #{$tablet} {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__questions {
+  text-align: center;
+  color: #283645;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+  @media #{$tablet} {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+  }
+}
+
+.contacts__item {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+
+  @media #{$tablet} {
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  @media #{$desktop} {
+    width: 33.3333%;
+    flex-grow: 0;
+  }
+
+  &:nth-child(2) {
+    @media #{$desktop} {
+      order: 2;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+
+  @media #{$desktop} {
+    display: block;
+    margin-bottom: -15px;
+    padding: 0;
+  }
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #d22856;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
+}

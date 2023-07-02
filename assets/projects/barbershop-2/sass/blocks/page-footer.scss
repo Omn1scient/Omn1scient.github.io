@@ -1,0 +1,254 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.page-footer {
+  position: relative;
+  width: 320px;
+  // responsive
+  //width: auto;
+  margin: 0 auto;
+  padding: 40px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.contacts__text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts__phone {
+  margin-top: 20px;
+  color: #ffffff;
+  border: 1px solid #3e3e3e;
+
+  &::active {
+    background-color: red;
+  }
+}
+
+.contacts__phone.button:active {
+  background-color: #252525;
+  border-color: #252525;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contacts__phone-mobile {
+  display: none;
+}
+
+.social__title {
+  display: none;  
+}
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.social__item {
+  display: flex;
+  width: 33.3333%;
+  height: 101px;
+  //border: 1px solid #3e3e3e;
+  box-sizing: border-box;
+}
+
+.social__link.button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+  border-color: #3e3e3e;
+
+  &:hover {
+    text-decoration: none;
+    border-color: #d5c9bd;
+  }
+
+  &:active {
+    background-color: #252525;
+    border-color: #252525;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__link--vkontakte.button {
+  background-image: url('../img/vk-icon.png');
+
+  &:active {
+    background-image: url('../img/vk-icon-darken.png');
+  }
+}
+
+.social__link--facebook.button {
+  background-image: url('../img/facebook-icon.png');
+
+  &:active {
+    background-image: url('../img/facebook-icon-darken.png');
+  }
+}
+
+.social__link--instagram.button {
+  background-image: url('../img/insta-icon.png');
+
+  &:active {
+    background-image: url('../img/insta-icon-darken.png');
+  }
+}
+
+.copyright__text {
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.copyright__link.button {
+  display: block;
+  color: #ffffff;
+  border: 1px solid #3e3e3e;
+
+  &:hover {
+    border-color: #d5c9bd;
+  }
+
+  &:active {
+    background-color: #252525;
+    border-color: #252525;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    // responsive
+    //width: auto;
+    margin: 0 auto;
+    padding: 45px;
+    padding-bottom: 30px;
+  }
+
+  .page-footer__contacts {
+    margin-bottom: 30px;
+  }
+
+  .contacts__title {
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .contacts__text {
+    text-align: left;
+  }
+  
+  .contacts__phone-mobile {
+    display: inline;
+  }
+
+  .contacts__phone.button {
+    display: inline;
+    padding: 0;
+    font-weight: normal;
+    text-align: left;
+    color: #ffffff;
+    text-transform: lowercase;
+    border: none;
+
+    &:active {
+      opacity: 0.5;
+      background-color: transparent;
+      border: none;
+    }
+
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .social__link--vkontakte.button {
+    background-image: url('../img/vk-icon.png');
+  }
+
+  .page-footer__copyright {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    width: 165px;
+    min-height: 90px;
+  }
+
+  .copyright__link.button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    max-width: 1200px;
+    padding: 45px 120px 45px px;
+  }
+
+  .page-footer__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__contacts {
+    width: 345px;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin-left: -165px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social__title {
+    display: flex;
+    align-self: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  .social__list {
+    min-width: 162px;
+    margin: 0;
+    align-self: center;
+  }
+
+  .social__item {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+  }
+
+  .social__item:last-child {
+    margin-right: 0;
+  }
+
+  .page-footer__copyright {
+    position: static;
+  }
+}

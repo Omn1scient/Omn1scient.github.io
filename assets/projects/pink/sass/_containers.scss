@@ -1,0 +1,181 @@
+.page-header__container {
+  @media #{$desktop} {
+    position: relative;
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.header-showcase__container {
+  min-height: 235px;
+  //padding: 102px 12% 53px 12%;
+  padding: 85px 12% 0px 12%;
+
+  @media #{$tablet} {
+    padding: 180px 12% 0px 12%;
+    max-width: 900px;
+    min-height: 440px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  @media #{$desktop} {
+    padding: 190px 12% 0px 12%;
+    min-height: 395px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.advantages-container {
+  @media #{$tablet} {
+    display: flex;
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$desktop} {
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.research__container {
+  @media #{$tablet} {
+    display: flex;
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$desktop} {
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.commercial__container {
+  @media #{$tablet} {
+   
+    display: block;
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$desktop} {
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.contacts-container {
+  width: 100%;
+  min-height: 600px;
+  background-image: url('../img/mobile/map-mobile-full.jpg');
+  background-repeat: no-repeat;
+  background-position: left 0px bottom 0px;
+  background-size: cover;
+  z-index: 1;
+
+  @media (min-width: 425px) {
+    background-image: url('../img/tablet/map-tablet-full.jpg');
+    background-position: left 0px bottom -160px;
+  }
+
+  @media #{$tablet} {
+    min-height: 848px;
+    background-position: left 0px bottom 50%;
+    background-size: cover;  
+  }
+
+  @media #{$desktop} {
+    min-height: 1000px;
+    background-image: url('../img/desktop/map-desktop-full.jpg');
+    background-position: left 45% bottom -40px;
+  }
+}
+
+.page-footer-container {
+  @media #{$tablet} {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  @media #{$desktop} {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.inner-wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media #{$tablet} {
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$desktop} {
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.inner-post-wrapper {
+  //background-color: #f2f2f2;
+  //padding-right: 20px;
+  //padding-left: 20px;
+
+  @media #{$tablet} {
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    //padding-left: 20px;
+    //padding-right: 20px;
+  }
+
+  @media #{$desktop} {
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

@@ -1,0 +1,256 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.price {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  background-color: #353535;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 34px;
+    background-color: #f8f5f2;
+    background-image: url('../svg/price-angle-div.svg');
+    background-repeat: no-repeat;
+    background-size: 102%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 34px;
+    background-color: #353535;
+    background-image: url('../svg/reviews-angle-div.svg');
+    background-repeat: no-repeat;
+    background-size: 102%;
+  }
+
+}
+
+.price h1 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.price__list {
+  width: 100%;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.price__item-number {
+  display: none;
+}
+
+.price__field {
+  font-weight: bold;
+  display: table-row-group;
+}
+
+.price__item-additional {
+  display: table-row-group;
+}
+
+.price__value {
+  vertical-align: top;
+}
+
+.sale-shedule {
+  display: flex;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid #484848;
+}
+
+.sale-shedule__clockwork {
+  width: 60px;
+  height: 60px;
+  background-image: url('../svg/clock.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.sale-shedule__sale-time {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 80px;
+      background-image: url('../svg/price-angle-div.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 1334px 68px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .price h1 {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .price__list {
+    margin-bottom: 30px;
+    border: 2px solid #484848;
+    border-collapse: collapse;
+  }
+
+  .price__row {
+    height: 55px;
+    max-height: auto;
+  }
+
+  .price__item-number {
+    display: table-cell;
+    width: 70px;
+    max-width: 100%;
+    border: 2px solid #484848;
+    text-align: center;
+  }
+
+  .price__field {
+    display: table-cell;
+    padding-left: 20px;
+    border: 2px solid #484848;
+  }
+
+  .price__item-additional {
+    display: table-cell;
+    padding-left: 20px;
+    border: 2px solid #484848;
+  }
+
+  .price__item-additional span {
+    display: none;
+  }
+
+  .price__value {
+    padding-left: 20px;
+    vertical-align: middle;
+    border: 2px solid #484848;
+  }
+
+  .sale-shedule {
+    padding: 20px 2%;
+    min-height: 73px;
+    justify-content: space-around;
+    border: 2px solid #484848;
+  }
+
+  .sale-shedule__clockwork {
+    width: 75px;
+    height: 75px;
+    background-image: url('../svg/clock.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .sale-shedule__sale-time {
+    display: flex;
+    width: 400px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    align-self: center;
+    text-transform: uppercase;
+  }
+
+  .sale-shedule__sale-time br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px 120px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .price__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price__list {
+    width: 630px;
+    height: 276px;
+    margin: 0;
+  }
+
+  .sale-shedule {
+    width: 269px;
+    min-height: 276px;
+    padding: 0px 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid #484848;
+    box-sizing: border-box;
+  }
+
+  .sale-shedule__clockwork {
+    width: 142px;
+    height: 142px;
+    margin: 30px auto 20px auto;
+    background-image: url('../svg/clock.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .sale-shedule__sale-time {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: none;
+  }
+}

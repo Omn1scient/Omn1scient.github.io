@@ -1,0 +1,19 @@
+{
+  "name": "barber-2.0",
+  "version": "1.0.0",
+  "description": "my gulp barber-2.0",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omn1scient",
+  "license": "ISC"
+}

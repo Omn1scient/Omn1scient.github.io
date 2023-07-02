@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп «Бородинский»</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/form-page.css">
+  <script src="picturefill.min.js"></script>
+
+<!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+     ym(53501929, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/53501929" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="svg/logotype-desktop.svg"> 
+        <source media="(min-width: 768px)" srcset="svg/logotype-tablet.svg">  
+        <img class="page-header__logo-image" src="svg/logotype-mobile.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="works-item.html">Наши работы</a></li>
+          <li class="site-list__item site-list__item--active"><a href="form.html">Записаться</a></li>
+          <li class="site-list__item"><a href="#">Контакты</a></li>
+          <li class="site-list__item"><a href="/">В Портфолио</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Войти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main page-main--inner">
+    <header class="page-title">
+      <h1 class="page-title__title">Запись на стрижку</h1>
+      <a class="button" href="index.html">На главную</a>
+    </header>
+    <section class="appointment">
+     <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
+      <section class="appointment__personal-details personal-details">
+        <h2 class="appointment__title visually-hidden">Контактная информация клиента</h2>
+        <div class="personal-details__name-wrapper">
+          <p class="personal-details__input-name">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input class="personal-details__input" id="name" type="text" name="name" placeholder="Имя">
+          </p>
+          <p class="personal-details__input-name">
+            <label class="visually-hidden" for="last-name">Фамилия</label>
+            <input class="personal-details__input" id="last-name" type="text" name="last-name" placeholder="Фамилия">
+          </p>
+          <p class="personal-details__input-name">
+            <label class="visually-hidden" for="patronymic">Отчество</label>
+            <input class="personal-details__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество">
+          </p>
+        </div>
+        <div class="personal-details__contacts-wrapper">
+          <p class="personal-details__input-contacts">
+            <label class="visually-hidden" for="phone">Контактный телефон</label>
+            <input class="personal-details__input" id="phone" type="tel" name="phone" placeholder="Контактный телефон">
+          </p>
+          <p class="personal-details__input-contacts">
+            <label class="visually-hidden" for="email">Контактный e-mail</label>
+            <input class="personal-details__input" id="email" type="email" name="email" placeholder="Контактный e-mail">
+          </p>
+        </div>
+        <textarea class="personal-details__additional" name="comment" cols="40" rows="5" placeholder="Доп. информация для мастера"></textarea>
+      </section>
+
+      <section class="appointment__beard beard">
+        <h2 class="appointment__title"><span>Выберите модель бороды:</span></h2>
+        <div class="beard__wrapper">
+          <p class="beard__style">
+            <label class="beard__style-name" for="admiral">
+              <input class="beard__radio visually-hidden" id="admiral" type="radio" name="beard-style" value="admiral" checked> адмирал
+              <span class="beard__custom-radio"></span>
+              <img src="svg/beard-icon.svg" width="72" height="110" alt="адмирал">
+            </label>            
+          </p>
+          <p class="beard__style">
+            <label class="beard__style-name" for="lumberjack">
+              <input class="beard__radio visually-hidden" id="lumberjack" type="radio" name="beard-style" value="lumberjack"> лесоруб
+              <span class="beard__custom-radio"></span>
+              <img src="svg/lumberjack.svg" width="72" height="110" alt="лесоруб">
+            </label>         
+          </p>
+          <p class="beard__style">
+            <label class="beard__style-name" for="polar">
+              <input class="beard__radio visually-hidden" id="polar" type="radio" name="beard-style" value="polar"> полярник
+              <span class="beard__custom-radio"></span>
+              <img src="svg/polar.svg" width="72" height="110" alt="полярник">
+            </label>         
+          </p>
+          <p class="beard__style">
+            <label class="beard__style-name" for="boyar">
+              <input class="beard__radio visually-hidden" id="boyar" type="radio" name="beard-style" value="boyar"> боярин
+              <span class="beard__custom-radio"></span>
+              <img src="svg/boyar.svg" width="72" height="110" alt="боярин">
+            </label>         
+          </p>
+          <p class="beard__style">
+            <label class="beard__style-name" for="sadhu">
+              <input class="beard__radio visually-hidden" id="sadhu" type="radio" name="beard-style" value="sadhu"> мудрец
+              <span class="beard__custom-radio"></span>
+              <img src="svg/sadhu.svg" width="72" height="110" alt="мудрец">
+            </label>         
+          </p>
+        </div>
+      </section>
+
+      <section class="appointment__complementary complementary">
+        <h2 class="appointment__title"><span>Дополнительные услуги:</span></h2>
+        <div class="complementary__wrapper">
+          <p class="complementary__item">
+            <input class="complementary__input visually-hidden" type="checkbox" id="colorize-beard" name="colorize" value="yes">
+            <label class="complementary__checkbox" for="colorize-beard">Подкрасить бороду</label>
+          </p>
+          <p class="complementary__item">
+            <input class="complementary__input visually-hidden" type="checkbox" id="comb-beard" name="comb" value="yes">
+            <label class="complementary__checkbox" for="comb-beard">Причесать бороду</label>
+          </p>
+          <p class="complementary__item">
+            <input class="complementary__input visually-hidden" type="checkbox" id="remove-gray" name="remove-gray" value="yes">
+            <label class="complementary__checkbox" for="remove-gray">Убрать седину</label>
+          </p>
+          <p class="complementary__item">
+            <input class="complementary__input visually-hidden" type="checkbox" id="screw-up-mustache" name="screw-up-mustache" value="yes">
+            <label class="complementary__checkbox" for="screw-up-mustache">Накрутить усы</label>
+          </p>
+          <p class="complementary__item">
+            <input class="complementary__input visually-hidden" type="checkbox" id="temple-trim" name="temple-trim" value="yes">
+            <label class="complementary__checkbox" for="temple-trim">Подровнять виски</label>
+          </p>
+          <p class="complementary__item">
+            <input class="complementary__input visually-hidden" type="checkbox" id="bald-polish" name="bald-polish" value="yes">
+            <label class="complementary__checkbox" for="bald-polish">Отполировать лысыну</label>
+          </p>
+        </div>
+      </section>
+       
+      <input class="appointment__button button" type="submit" value="отправть заявку">
+     </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп «Бородинский»</b>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a class="contacts__phone button" href="tel:+78125556666">
+            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+          </a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram button" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+  <section class="modal-login">
+    <h2 class="modal-login__title">Личный кабинет</h2>
+    <p class="modal-login__description">Введите свой логин и пароль, чтобы войти</p>
+    <form  class="modal-login__login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-login__input-wrapper">
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="modal-login__input modal-login__input--icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p class="modal-login__input-wrapper">
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="modal-login__input modal-login__input--icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="modal-login__login-help">
+        <label class="modal-login__login-checkbox">
+          <input class="visually-hidden" type="checkbox" name="remember">
+          <span class="modal-login__checkbox-indicator">Запомните меня</span>
+        </label>
+        <a class="modal-login__restore" href="##">Я забыл пароль!</a>
+      </p>
+      <button class="modal-login__modal-enter button" type="submit">Войти<span> в личный кабинет</span></button>
+    </form>
+    <button class="modal-login__modal-close button" type="button">Закрыть</button>
+  </section>
+  <div class="overlay"></div>
+  <script src="js/script.js"></script>
+  <!-- <a href="../index.html" class="portfolio"></a> -->
+</body>
+</html>

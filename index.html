@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/icons/portfolio-icon.png">
+
+  <meta property="og:image" content="/assets/img/og/og-img.png">
+  <meta property="og:site_name" content="Page title"/>
+  <meta property="og:title" content="Page title"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content=""/>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/simplebar.css">
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+  <title>Главная</title>
+</head>
+<body>
+<header class="header">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+    <div class="container">
+
+      <p class="navbar-brand who-am-i">
+        <span class="my-name">
+          <span>Антон</span>
+          <span class="divider"> | </span>
+          <span>HTML-верстальщик</span>
+        </span>
+        <a href="tel:+79534756900" class="my-phone text-decoration-none">+7-(953)-475-69-00</a>
+      </p>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav nav me-auto mb-lg-0" id="myTab" role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+              <span data-hover="Обо мне">Обо мне</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link" id="site-tab" data-bs-toggle="tab" data-bs-target="#site-tab-pane" role="tab" aria-controls="site-tab-pane" aria-selected="true">
+              <span data-hover="Примеры сайтов">Примеры сайтов</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link" id="layout-tab" data-bs-toggle="tab" data-bs-target="#layout-tab-pane" role="tab" aria-controls="layout-tab-pane" aria-selected="true">
+              <span data-hover="Примеры вёрстки">Примеры вёрстки</span>
+            </a>
+          </li>
+
+          <!--
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          -->
+
+        </ul>
+
+        <ul class="profile__social social">
+          <li class="social__item">
+            <a class="social__item-link" target="_blank" href="https://t.me/CircleOfPotato">
+              <div class="social__item-wrapper">
+                <img class="social__item-icon" src="assets/images/icons/telegram.png" alt="Связаться со мной в Телеграм">
+              </div>
+              <span class="visually-hidden">Telegram</span>
+              <span class="social__tip">Telegram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="skype:vermilionpt333?chat">
+              <div class="social__item-wrapper">
+                <img class="social__item-icon" src="assets/images/icons/skype.png" alt="Связаться со мной в Скайп">
+              </div>
+              <span class="visually-hidden">Skype</span>
+              <span class="social__tip">VermilionPt333</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="mailto:vermilionpt3@yandex.ru">
+              <div class="social__item-wrapper">
+                <img class="social__item-icon" src="assets/images/icons/mail.png" alt="Связаться со мной по Почте">
+              </div>
+              <span class="visually-hidden">E-mail</span>
+              <span class="social__tip">VermilionPt3@yandex.ru</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="tel:+79534756900">
+              <div class="social__item-wrapper">
+                <img class="social__item-icon" src="assets/images/icons/phone.png" alt="+7-(953)-475-69-00">
+              </div>
+              <span class="visually-hidden">Phone</span>
+              <span class="social__tip">+7-(953)-475-69-00</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="https://www.fl.ru/users/omn1scient/" target="_blank">
+              <div class="social__item-wrapper">
+                <img class="social__item-icon" src="assets/images/icons/fl.png" alt="fl.ru/users/omn1scient">
+              </div>
+              <span class="visually-hidden">Fl.ru</span>
+              <span class="social__tip">fl.ru/users/omn1scient</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+<main>
+
+
+
+  <div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="about">
+        <div class="container">
+
+          <div class="bg-plate">
+            <div class="row" style="position: relative">
+              <div class="col-md-5 col-lg-4 col-xl-4">
+                <div class="about__main-photo main-photo">
+                  <img src="assets/images/about/me-mobile.jpg" alt="Антон">
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-7 col-xl-8">
+
+                <div class="about__profile profile">
+                  <h2 class="profile__name profile__title">Антон</h2>
+                  <span class="profile__subtitle">HTML-верстальщик</span>
+                  <p class="profile__slogan">Верстаю html-страницы, <b class="word-accent">Landing Page</b> или любые другие малые / средние / крупные проекты. Натягиваю вёрстку на CMS.</p>
+                  <h6 class="profile__title">Ключевые навыки:</h6>
+
+                  <ul class="profile__skills-list">
+                    <li><b class="word-accent">HTML5</b>, CSS3, <b class="word-accent">Js</b> / Jq.</li>
+                    <li>Bootstrap / <b class="word-accent">UIKit</b> / Grid / <b class="word-accent">Flexbox</b>.</li>
+                    <li>Препроцессоры <b class="word-accent">Less</b> / Sass. Больше нравится <b class="word-accent">Sass</b>.</li>
+                    <li>Кроссбраузерная, фиксированная / адаптивная / отзывчивая верстка.</li>
+                    <li>В качестве сборщика и автоматизации использую <b class="word-accent">Gulp.js</b></li>
+                    <li>Верстка макетов из <b class="word-accent">Аdobe</b> Photoshop, <b class="word-accent">Figma</b>, Pixso, <b class="word-accent">Avocode</b>.</li>
+                    <li>Минификация кода, сжатие изображений, оптимизация.</li>
+                    <li>Натяжка вёрстки на CMS. Нравятся <b class="word-accent">MODx</b>, Winter.</li>
+                    <li><b class="word-accent">Landing</b> под ключ (Хостинг, домен, админка).</li>
+                  </ul>
+
+                </div>
+              </div>
+              <div class="col-12 about__additional-col">
+                <div class="profile__personal-skills-wrapper">
+                  <h6 class="profile__title">Личные качества:</h6>
+                  <p>Аналитический склад ума, люблю учиться чему то новому, внимателен к деталям, усидчив, не боюсь сложных задач и нестандартных решений.</p>
+                </div>
+                <div class="profile__contacts-wrapper">
+                  <h6 class="profile__title">Связь со мной:</h6>
+                  <ul class="profile__social social">
+                    <li class="social__item">
+                      <a class="social__item-link" target="_blank" href="https://t.me/CircleOfPotato">
+                        <div class="social__item-wrapper">
+                          <img class="social__item-icon" src="assets/images/icons/telegram.png" alt="Связаться со мной в Телеграм">
+                        </div>
+                        <span class="visually-hidden">Telegram</span>
+                        <span class="social__tip">Telegram</span>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__item-link" href="skype:vermilionpt333?chat">
+                        <div class="social__item-wrapper">
+                          <img class="social__item-icon" src="assets/images/icons/skype.png" alt="Связаться со мной в Скайп">
+                        </div>
+                        <span class="visually-hidden">Skype</span>
+                        <span class="social__tip">Skype</span>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__item-link" href="mailto:vermilionpt3@yandex.ru">
+                        <div class="social__item-wrapper">
+                          <img class="social__item-icon" src="assets/images/icons/mail.png" alt="Связаться со мной по Почте">
+                        </div>
+                        <span class="visually-hidden">E-mail</span>
+                        <span class="social__tip">VermilionPt3@yandex.ru</span>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__item-link" href="tel:+79534756900">
+                        <div class="social__item-wrapper">
+                          <img class="social__item-icon" src="assets/images/icons/phone.png" alt="+7-(953)-475-69-00">
+                        </div>
+                        <span class="visually-hidden">Phone</span>
+                        <span class="social__tip">+7-(953)-475-69-00</span>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__item-link" href="https://www.fl.ru/users/omn1scient/" target="_blank">
+                        <div class="social__item-wrapper">
+                          <img class="social__item-icon" src="assets/images/icons/fl.png" alt="fl.ru/users/omn1scient">
+                        </div>
+                        <span class="visually-hidden">Fl.ru</span>
+                        <span class="social__tip">FL.ru</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="layout-tab-pane" role="tabpanel" aria-labelledby="layout-tab" tabindex="0">
+      <div class="container">
+        <div class="bg-plate">
+          <div class="row">
+            <div class="title-wrap">
+              <h2 class="text-center mt-3 mb-4 mb-xl-5 block-title">Примеры вёрстки макетов</h2>
+            </div>
+
+            <!-- ALICE -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/alice/">
+                  <img class="project-preview" src="assets/projects/alice/preview/preview.jpg" alt="">
+                  <span class="project-title-link" title="alice">alice</span>
+                </a>
+              </div>
+            </div>
+            <!-- PINK -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/pink/">
+                  <img class="project-preview" src="assets/projects/pink/preview/preview.jpg" alt="">
+                  <span class="project-title-link" title="pink">pink</span>
+                </a>
+              </div>
+            </div>
+            <!-- BARBERSHOP-2.0 -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/barbershop-2/">
+                  <img class="project-preview" src="assets/projects/barbershop-2/preview/preview.jpg" alt="">
+                  <span class="project-title-link" title="barbershop-2">barbershop 2.0</span>
+                </a>
+              </div>
+            </div>
+            <!-- SEDONA -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/sedona/">
+                  <img class="project-preview" src="assets/projects/sedona/preview/index.jpg" alt="">
+                  <span class="project-title-link" title="sedona">sedona</span>
+                </a>
+              </div>
+            </div>
+            <!-- GLAACY -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/gllacy/">
+                  <img class="project-preview" src="assets/projects/gllacy/preview/index.jpg" alt="">
+                  <span class="project-title-link" title="gllacy">gllacy</span>
+                </a>
+              </div>
+            </div>
+            <!-- NERDS -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/nerds/">
+                  <img class="project-preview" src="assets/projects/nerds/preview/index.jpg" alt="">
+                  <span class="project-title-link" title="nerds">nerds</span>
+                </a>
+              </div>
+            </div>
+            <!-- BARBERSHOP -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/barbershop/">
+                  <img class="project-preview" src="assets/projects/barbershop/preview/index.jpg" alt="">
+                  <span class="project-title-link" title="barbershop">barbershop</span>
+                </a>
+              </div>
+            </div>
+            <!-- KEKSBY -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/keksby/">
+                  <img class="project-preview" src="assets/projects/keksby/preview/index.jpg" alt="">
+                  <span class="project-title-link" title="keksby">keksby</span>
+                </a>
+              </div>
+            </div>
+            <!-- ABK PRESS -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="assets/projects/abk-press/">
+                  <img class="project-preview" src="assets/projects/abk-press/preview/preview.jpg" alt="">
+                  <span class="project-title-link" title="alice">«Айскул» групп</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="site-tab-pane" role="tabpanel" aria-labelledby="site-tab" tabindex="0">
+      <div class="container">
+        <div class="bg-plate">
+          <div class="row">
+            <div class="title-wrap">
+              <h2 class="text-center mt-3 mb-4 mb-xl-5 block-title">Примеры готовых сайтов</h2>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://garants-orel.ru/">
+                  <img class="project-preview" src="assets/projects/garant-c/preview.jpg" alt="">
+                  <span class="project-title-link" title="Xiaomi">Гарант-С</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://bork.na4u.ru/">
+                  <img class="project-preview" src="https://bork.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Bork">Bork</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://glav-ms.na4u.ru/">
+                  <img class="project-preview" src="https://glav-ms.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Глав-МС">Глав-МС</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://mi.na4u.ru/">
+                  <img class="project-preview" src="https://mi.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Xiaomi">Xiaomi</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://samokatof.na4u.ru/">
+                  <img class="project-preview" src="https://samokatof.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Samokatof">Samokatof</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://huawei.na4u.ru/">
+                  <img class="project-preview" src="https://huawei.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Huawei">Huawei</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://dyson.na4u.ru/">
+                  <img class="project-preview" src="https://dyson.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Dyson">Dyson</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center p-0">
+              <div class="project-item">
+                <a class="project-item-link" href="https://samsung.na4u.ru/">
+                  <img class="project-preview" src="https://samsung.na4u.ru/preview.jpg" alt="">
+                  <span class="project-title-link" title="Samsung">Samsung</span>
+                </a>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--label class="custom-checkbox-label">One
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label-->
+
+  <!--
+  <section class="product-slider section-padding">
+    <div class="container">
+      <h2 class="title">Слайдер</h2>
+      <div class="slider-container">
+        <div class="swiper mySlider swiper-no-swiping">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/tefal.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/air.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/asus.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/benq.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/bosch.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/canon.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/currus-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/dell.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/ecovacs.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/eiki.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/einhell.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/elari.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/fimi.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/fujitsu.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/halten-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/hiper-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/hoverbot-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/jvc.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/lg.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/nec.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/ninebot-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/optoma.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/panasonic.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/segway-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/sony.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/syma.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/xiaomi.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="productSlider__item">
+                <div class="productSlider__img">
+                  <img src="/assets/images/brands/xiaomi-logo.png" alt="logo">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="swiper-navigation">
+          <div class="swiper-button-prev-unique">
+            <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.812 2.567a1.506 1.506 0 0 0 0-2.127 1.506 1.506 0 0 0-2.128 0L3.188 5.936a1.506 1.506 0 0 0 0 2.128l5.496 5.496c.587.587 1.541.587 2.128 0a1.506 1.506 0 0 0 0-2.127L6.379 7l4.433-4.433Z" fill="#494949"/></svg>
+          </div>
+          <div class="swiper-button-next-unique">
+            <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M3.188 11.433a1.506 1.506 0 0 0 0 2.127c.586.587 1.54.587 2.127 0l5.497-5.496a1.506 1.506 0 0 0 0-2.128L5.315.44a1.506 1.506 0 0 0-2.127 0 1.506 1.506 0 0 0 0 2.127L7.62 7l-4.433 4.433Z" fill="#494949"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></svg>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </section>
+  -->
+
+
+
+  <!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCallrequest">
+    Launch demo modal
+  </button-->
+
+
+
+  <div class="modal callback fade" id="modalCallrequest" tabindex="-1" aria-labelledby="modalCallrequestLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-header__title">Заказать обратный звонок</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 11 11"><path fill="#fff" d="M2.2 1.2l3.3 3.3L8.8 1.2C8.9 1.1 9.1 1 9.3 1 9.7 1 10 1.3 10 1.7c0 0.2-0.1 0.4-0.2 0.5L6.5 5.5 9.8 8.8C9.9 8.9 10 9.1 10 9.3 10 9.7 9.7 10 9.3 10c-0.2 0-0.4-0.1-0.5-0.2L5.5 6.5 2.2 9.8c-0.1 0.1-0.3 0.2-0.5 0.2C1.3 10 1 9.7 1 9.3 1 9.1 1.1 8.9 1.2 8.8L4.5 5.5 1.2 2.2C1.1 2.1 1 1.9 1 1.7 1 1.3 1.3 1 1.7 1 1.9 1 2.1 1.1 2.2 1.2z"/></svg>
+            </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal__container">
+            <p class="subtitle">Заполните поля ниже и мы свяжемся с вами в ближайшее время!</p>
+            <form action="" class="callback__form">
+              <div class="row">
+                <div class="col-12">
+                  <div class="field-wrapper callback__form-name">
+                    <label for="">
+                      <input class="callback__input-name" type="text" id="input-name" placeholder="Ваше имя" required>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="field-wrapper callback__form-phone">
+                    <label for="">
+                      <input class="callback__input-phone phoneMask" type="text" id="input-phone" placeholder="Ваш телефон" required>
+                    </label>
+                  </div>
+                </div>
+                <div class="callback__form-col--button-wrapper col-12">
+                  <button type="submit" class="callback__submit-button font-weight-bold btn"><span>Заказать звонок</span></button>
+                </div>
+                <div class="col-12">
+                  <p class="callback__acceptance">
+                    Нажимая на кнопку «Заказать звонок», <br> вы соглашаетесь с <a href="#modalPolicy" data-bs-toggle="modal" data-bs-target="#modalPolicy">политикой конфиденциальности</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="navbar navbar-dark bg-dark m-0">
+    <div class="container">
+      <h5 class="title text-center">Контакты:</h5>
+      <div class="navbar-footer">
+        <p class="mail-me">
+          <a href="https://t.me/CircleOfPotato" data-hover="Telegram: @CircleOfPotato" target="_blank"> Telegram: @CircleOfPotato</a>
+        </p>
+        <p class="mail-me">
+          <a href="mailto:vermilionpt3@yandex.ru" data-hover="E-mail: VermilionPt3@yandex.ru"> E-mail: VermilionPt3@yandex.ru</a>
+        </p>
+        <p class="call-me">
+          <a href="tel:+79534756900" data-hover="Phone: +7-(953)-475-69-00">Phone: +7-(953)-475-69-00</a>
+        </p>
+        <p class="call-me-skype">
+          <a href="skype:vermilionpt333?chat" data-hover="Skype: VermilionPt333">Skype: VermilionPt333</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="assets/js/libs/jquery-3.4.1.min.js"></script>
+<script src="assets/js/libs/jquery.mask.min.js"></script>
+<!--script src="/assets/js/libs/jquery.fancybox.min.js"></script-->
+<script src="assets/js/libs/bootstrap.bundle.min.js"></script>
+<script src="assets/js/libs/swiper-bundle.min.js"></script>
+<!--<script src="/assets/js/libs/simplebar.min.js"></script>-->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

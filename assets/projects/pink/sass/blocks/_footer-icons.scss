@@ -1,0 +1,51 @@
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 127px;
+  padding-top: 42px;
+}
+
+.footer-icons__social {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.page-inner .footer-icons__social {
+  margin-bottom: 44px;
+}
+
+.footer-icons__copyright {
+  position: relative;
+  padding-right: 40px;
+  line-height: 50px;
+  margin-bottom: 50px;
+
+  @media #{$tablet} {
+    margin-bottom: 0;
+  }
+
+  &:hover path {
+    fill: #000000;
+  }
+
+  &:active path {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.footer-icons__copyright a {
+  text-decoration: none;
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-icons__copyright svg {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}

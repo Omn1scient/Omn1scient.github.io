@@ -1,0 +1,124 @@
+.research {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+    padding: 50px 0;
+  }
+
+  @media #{$desktop} {
+    padding-top: 0;
+    background-color: #f2f2f2;
+  }
+}
+
+.research__article {
+  @media #{$tablet} {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+    min-height: 276px;
+
+    @media #{$desktop} {
+      margin-left: 390px;
+      min-height: 345px;
+    }
+  }
+
+  &::before {
+    @media #{$tablet} {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -288px;
+      width: 238px;
+      height: 276px;
+      background-image: url('../svg/desktop/timer.svg');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
+
+      @media #{$desktop} {
+        left: -378px;
+        width: 298px;
+        height: 345px;
+      }
+    }
+  }
+
+  &::after {
+    @media #{$tablet} {
+      content: "24";
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 190px;
+      text-align: center;
+      color: #d22856;
+      position: absolute;
+      top: 56px;
+      left: -271px;
+      width: 202px;
+      height: 202px;
+      background-image: url('../svg/desktop/diagram.svg');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
+
+      @media #{$desktop} {
+        top: 69px;
+        left: -356px;
+        width: 253px;
+        height: 253px;
+        font-size: 120px;
+        line-height: 245px;
+      }
+    }
+  }
+}
+
+.research__title {
+  @media #{$tablet} {
+    //padding-right: 100px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  @media #{$desktop} {
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+
+  & br {
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+}
+
+.research__description {
+  @media #{$tablet} {
+    min-height: 96px;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.research__more {
+  @media #{$tablet} {
+    color: #d22856;
+  }
+}
+

@@ -1,0 +1,100 @@
+.panorame {
+  color: #283645;
+}
+
+.panorame .inner-wrapper {
+  padding-left: 0px;
+  padding-right: 0px;
+
+  @media #{$tablet} {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @media #{$desktop} {
+    min-width: 1200px;
+    //position: relative;
+    //margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.panorame__item {
+  //width: 100%;
+  @media #{$tablet} {
+    width: 100%;
+  }
+
+  @media #{$desktop} {
+    width: 100%;
+  }
+}
+
+.panorame__item .inner-wrapper {
+
+  @media #{$tablet} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media #{$desktop} {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.panorame__days-best {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  padding: 6px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #d22856;
+  text-align: center;
+
+  @media #{$tablet} {
+    top: 57px;
+  }
+}
+
+.panorame__photo {
+  width: 100%;
+}
+
+.panorame__comment-block {
+  @media #{$tablet} {
+    position: relative;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 50px;
+  }
+}
+
+.panorame__authors-comment {
+  margin-bottom: 0;
+}
+
+.panorame__like {
+  display: inline-flex;
+
+  @media #{$tablet} {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+  }
+}
+
+.panorame__like-icon {
+  @media #{$tablet} {
+    margin-left: 15px;
+    order: 1;
+  }
+}

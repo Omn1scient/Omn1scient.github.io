@@ -1,0 +1,54 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.page-title {
+  margin: 0 auto;
+  padding: 30px 0;
+  color: #000000;
+  text-transform: uppercase;
+
+  a {
+    display: none;
+  }
+}
+
+.page-title__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 58px;
+    padding-bottom: 40px;
+
+    a {
+      align-self: center;
+
+      display: block;
+      width: 100px;
+      margin-top: -5px;
+    }
+  }
+
+  .page-title__title {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    width: 960px;
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+}

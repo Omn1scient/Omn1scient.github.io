@@ -1,0 +1,94 @@
+.logo-header {
+  margin-left: 20px;
+}
+
+.page-header__logo {
+  position: relative;
+  z-index: 3;
+  display: none;
+
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:hover .stars {
+    fill: #ffffff;
+  }
+
+  &:active path {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo--logo-mobile {
+  @media (max-width: 659px) {
+    display: block;
+  }
+}
+
+.page-header__logo--logo-tablet {
+  @media (min-width: 660px) and (max-width: 1199px) {
+    display: block;
+    width: 147px;
+    height: 41px;
+  }
+}
+
+.footer-icons__logo {
+  display: none; 
+}
+
+.page-inner .footer-icons__logo--tablet-footer {
+  display: flex;
+}
+
+.page-inner .footer-icons__logo-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.footer-icons__logo--tablet-footer {
+  @media (min-width: 660px) and (max-width: 1199px) {
+    display: block;
+    width: 147px;
+    height: 41px;
+
+    &:hover path {
+      fill: #d22856;
+    }
+
+    &:active path {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer-icons__logo--desktop-footer {
+  @media #{$desktop} {
+    display: block;
+    width: 147px;
+    height: 41px;
+
+    &:hover path {
+      fill: #d22856;
+    }
+
+    &:active path {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-header__logo--logo-desktop-header {
+  @media #{$desktop} {
+    display: block;
+    width: 147px;
+    height: 41px;
+  }
+}
+
+

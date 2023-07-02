@@ -1,0 +1,100 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.complementary {
+  margin-bottom: 48px;
+}
+
+.complementary__item {
+  width: 100%;
+  height: 38px;
+  display: flex;
+}
+
+.complementary__checkbox {
+  position: relative;
+  padding-left: 55px;
+  height: 22px;
+  margin: auto 0;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border: 1px solid #e5ddd5;
+    box-sizing: border-box;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 12px;
+    width: 12px;
+    height: 25px;
+    background-color: transparent;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-radius: 1px;
+  }
+
+  &:hover::before {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active::before {
+    border: 1px solid #d5c9bd;
+    background-color: #d5c9bd;
+  }
+}
+
+.complementary__input:checked + .complementary__checkbox::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .complementary__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .complementary__item {
+    width: 40%;
+    max-width: 50%;
+  }
+
+  .complementary__item:nth-child(2n) {
+    margin-right: 60px;
+  }
+
+  .complementary__checkbox {
+    position: relative;
+    padding-left: 55px;
+    height: 22px;
+    margin: auto 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .complementary__item {
+    width: 40%;
+    max-width: 33.3333%;
+  }
+
+  .complementary__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}

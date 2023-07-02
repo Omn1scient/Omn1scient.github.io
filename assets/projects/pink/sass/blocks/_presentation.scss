@@ -1,0 +1,79 @@
+.presentation {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 271px;
+
+  @media #{$tablet} {
+    width: 45%;
+  }
+}
+
+.presentation__title {
+  display: none;
+
+  @media #{$tablet} {
+    display: flex;
+    justify-content: center;
+    min-height: 126px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+
+  & span {
+    @media #{$tablet} {
+      display: flex;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    @media #{$desktop} {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 60px
+    }
+  }
+}
+
+.presentation__button {
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  padding-top: 12px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border: 5px solid #ffffff;
+  border-radius: 50px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.presentation__app-icons-list {
+  @include reset-list;
+
+  @media #{$desktop} {
+    margin: 60px auto;
+  }
+}
+
+.presentation__app-info {
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}

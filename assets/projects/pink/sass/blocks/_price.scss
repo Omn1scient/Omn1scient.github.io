@@ -1,0 +1,33 @@
+.price {
+  position: relative;
+  margin-top: 60px;
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+
+  @media #{$tablet} {
+    padding-bottom: 70px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -70px;
+    width: 105%;
+    height: 200px;
+    background-color: #f2f2f2;
+    transform: rotate(-5deg);
+
+    @media #{$tablet} {
+      transform: rotate(-3deg);
+    }
+
+  }
+}
+
+.price__price-table {
+  position: relative;
+  z-index: 1;
+
+  //transform: translateX(-300px);
+}

@@ -1,0 +1,138 @@
+.reviews {
+  margin-bottom: 120px;
+}
+
+.reviews__list {
+  @media #{$desktop} {
+    position: relative;
+    padding-top: 130px;
+  }
+
+  &::before {
+    @media #{$desktop} {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 46%;
+      width: 79px;
+      height: 63px;
+      background-image: url('../svg/desktop/quotes.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.reviews__list-item {
+  display: none;
+  margin: 0;
+  padding: 0 20px;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media #{$desktop} {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.reviews__authors-name {
+  display: block;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+  text-align: center;
+
+  @media #{$tablet} {
+    font-size: 20px;
+  }
+
+  @media #{$desktop} {
+    font-size: 24px;
+  }
+}
+
+.reviews__authors-info {
+  display:  none;
+
+  @media #{$tablet} {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+}
+
+.reviews__text {
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  min-height: 90px;
+
+  @media #{$tablet} {
+    order: -1;
+  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.reviews__button {
+  display:  none;
+
+  @media #{$desktop} {
+    display: block;
+    position: absolute;
+    top: 52%;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #cdd0d3;
+    border-left: none;
+    border-bottom: none;
+
+    &:hover {
+      border: 2px solid #8d959d;
+      border-left: none;
+      border-bottom: none;
+      outline: none;
+    }
+
+    &:active {
+      border: 2px solid #e9ebec;
+      border-left: none;
+      border-bottom: none;
+      outline: none;
+    }
+  }
+}
+
+.reviews__button--prev {
+  @media #{$desktop} {
+    left: 10px;
+    background-color: transparent;
+    transform: rotate(-135deg);
+  }
+}
+
+.reviews__button--next {
+  @media #{$desktop} {
+    right: 10px;
+    background-color: transparent;
+    transform: rotate(45deg);
+  }
+}
+
+.reviews__bullets {
+  margin-top: 30px;
+}
+

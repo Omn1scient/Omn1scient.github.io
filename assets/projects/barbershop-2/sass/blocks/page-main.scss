@@ -1,0 +1,41 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+
+.page-main--inner {
+  width: 320px;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #f8f5f2;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main--inner {
+    margin-top: -100px;
+    position: relative;
+    min-width: 768px;
+    width: 100%;
+    max-width: 1200px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 80px;
+      background-image: url('../svg/angle-div.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 1334px 68px;
+    }
+  } 
+}
+
+@media (min-width: $desktop-width) {
+  .page-main--inner {
+    width: 1200px;
+    margin-top: -300px;
+  } 
+}

@@ -1,0 +1,159 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.personal-details {
+  margin-bottom: 30px;
+}
+
+.personal-details__name-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 162px;
+  margin-bottom: 32px;
+}
+
+.personal-details__input-name {
+  margin: 0;
+  padding: 0;
+}
+
+.personal-details__input-name:nth-child(2n) {
+  order: -1;
+}
+
+.personal-details__input {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  padding-left: 15px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.personal-details__contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 106px;
+  margin-bottom: 32px;
+}
+
+.personal-details__input-contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.personal-details__additional {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  padding-left: 15px;
+  width: 100%;
+  height: 112px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.personal-details input::-webkit-input-placeholder,
+.personal-details__additional::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.personal-details input::-moz-placeholder,
+.personal-details__additional::-moz-placeholder {
+  color: #000000;
+}
+
+.personal-details input:-ms-input-placeholder,
+.personal-details__additional:-ms-input-placeholder {
+  color: #000000;
+}
+
+.personal-details input:-moz-placeholder,
+.personal-details__additional:-moz-placeholder {
+  color: #000000;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .personal-details__name-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 35px;
+  }
+
+  .personal-details__input-name {
+    //flex-grow: 0.2; - все выглядит круче, но IE11
+    min-width: 213.3333px;
+    width: 31%; // - не позволяет убрать IE11
+    max-width: 295px;
+  }
+
+  .personal-details__input-name:nth-child(2n) {
+    order: 0;
+  }
+
+  .personal-details__input {
+    height: 70px;
+  }
+
+  .personal-details__contacts-wrapper {
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .personal-details__input-contacts {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .personal-details__input-contacts:last-child {
+    margin-bottom: 0;
+  }
+
+  .personal-details input::-webkit-input-placeholder,
+  .personal-details__additional::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .personal-details input::-moz-placeholder,
+  .personal-details__additional::-moz-placeholder {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .personal-details input:-ms-input-placeholder,
+  .personal-details__additional:-ms-input-placeholder {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .personal-details input:-moz-placeholder,
+  .personal-details__additional:-moz-placeholder {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .personal-details__additional {
+    height: 211px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-details__input-contacts {
+    width: 462px;
+    margin-bottom: 0;
+  }
+}

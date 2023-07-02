@@ -1,0 +1,19 @@
+@mixin no-outline {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin login-icon($color) {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%25' height='100%25' viewBox='0 0 67 67' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'%3e%3cg transform='matrix(4.16667,0,0,4.16667,0,0)'%3e%3cpath d='M0,7.001L7.009,7.001L7.009,4.061L10.96,8.01L7.009,11.911L7.009,9.061L0,9.021L0,7.001Z' style='fill:#{$color};fill-rule:nonzero;'/%3e%3cpath d='M7.009,0.001L7.009,2.001L14.03,2.001L14.03,13.991L7.009,13.991L7.009,16L16,16L16,0.001L7.009,0.001Z' style='fill:#{$color};fill-rule:nonzero;'/%3e%3c/g%3e%3c/svg%3e");
+}
+

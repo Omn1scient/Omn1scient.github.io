@@ -1,0 +1,101 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.beard__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beard__style {
+  position: relative;
+  display: flex;
+  width: 85px;
+  margin-right: 12.5px;
+  margin-top: 0;
+}
+
+.beard__style:nth-child(3n) {
+  width: 85px;
+  margin-right: 0;
+}
+
+.beard__style-name {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.beard__style-name img {
+  margin-top: 10px;
+}
+
+.beard__custom-radio::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 2px solid #f2eeea;
+  border-radius: 50%;
+}
+
+.beard__custom-radio:hover::before {
+  border: 2px solid #e8e1da;
+}
+
+.beard__custom-radio:active::before {
+  background-color: #e8e1da;
+}
+
+.beard__custom-radio::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: #f8f5f2;
+  border: 2px solid #f2eeea;
+  border-radius: 50%;
+}
+
+.beard__custom-radio:hover::after {
+  border: 2px solid #e8e1da;
+}
+
+.beard__radio:checked + .beard__custom-radio::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .appointment__title {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e5ddd5;
+    }
+  }
+
+  .beard__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .beard__style:nth-child(3n) {
+    width: 85px;
+    margin-right: 12.5px;
+  }
+}

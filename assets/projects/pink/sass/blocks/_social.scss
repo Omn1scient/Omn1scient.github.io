@@ -1,0 +1,30 @@
+.social__button {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border: 4px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover {
+    border: 4px solid #283645;
+  }
+
+  &:active {
+    border: 4px solid rgba(40, 54, 69, 0.3);
+  }
+}
+
+.social__button {
+
+  &:active path {
+    fill: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.social__button svg {
+  margin: auto auto;
+}
+
+.social__button--youtube {
+  padding-left: 4px;
+}

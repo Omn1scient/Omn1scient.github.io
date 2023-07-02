@@ -1,0 +1,24 @@
+.page-main {
+  margin-bottom: 40px;
+}
+
+.page-main-title {
+  max-width: 85%;
+  margin: 50px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #283645;
+  text-align: center;
+
+  @media #{$tablet} {
+    max-width: 460px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 80px auto;
+  }
+
+  @media #{$desktop} {
+    max-width: 630px;
+  }
+}

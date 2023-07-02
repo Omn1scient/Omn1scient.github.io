@@ -1,0 +1,52 @@
+.personal {
+  padding-bottom: 30px;
+
+  @media #{$desktop} {
+    padding-bottom: 10px;
+  }
+}
+
+.personal__data-list {
+  @media #{$desktop} {
+    width: 438px;
+  }
+}
+
+.personal__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media #{$tablet} {
+    margin-bottom: 50px;
+  }
+
+  &:last-child {
+    @media #{$tablet} {
+      margin-bottom: 0;
+    }
+  }
+
+  & label {
+    display: block;
+    margin-left: 10px;
+    color: #d22856;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media #{$tablet} {
+      margin: 0px 20px 0px 0px;
+      padding: 15px 0px 0px 0px;
+    }
+  }
+
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+
+

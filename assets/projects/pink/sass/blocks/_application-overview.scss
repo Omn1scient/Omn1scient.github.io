@@ -1,0 +1,48 @@
+.application-overview {
+  overflow: hidden;
+  color: red;
+}
+
+.application-overview__title {
+  color: #283645;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center; 
+  margin-bottom: 115px;
+
+  @media #{$tablet} {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+
+  @media #{$desktop} {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 200px;
+  }
+
+  & span {
+    display: block;
+    margin-bottom: 30px;
+
+    @media #{$tablet} {
+      margin-bottom: 0;
+      line-height: 50px;
+    }
+
+    @media #{$desktop} {
+      line-height: 60px;
+    }
+  }
+
+  & span:last-child {
+    @media #{$tablet} {
+      padding: 0 160px;
+    }
+
+    @media #{$desktop} {
+      padding: 0 300px;
+    }
+  }
+}

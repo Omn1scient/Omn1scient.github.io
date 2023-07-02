@@ -1,0 +1,184 @@
+.header-showcase {
+  position: relative;
+  margin-top: -66px;
+  background-color: #1d2631;
+  background-image: url('../img/mobile/back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 321px) {
+    background-image: url('../img/tablet/back-tablet@1x.jpg');
+  }
+
+  @media #{$tablet} {
+    margin-top: -110px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -110px;
+    min-height: 857px;
+    background-image: url('../img/desktop/back-desktop.jpg@1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.inner-header .header-showcase {
+  margin-top: -80px;
+  background-position: top;
+
+  @media #{$tablet} {
+    margin-top: -124px;
+    background-size: cover;
+  }
+
+  @media #{$desktop} {
+    margin-top: -110px;
+    min-height: 395px;
+    background-size: 135%;
+  }
+}
+
+.inner-header .header-showcase__title {
+  height: 82px;
+  //padding: 102px 12% 53px 12%;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+
+  @media #{$tablet} {
+    //padding: 110px 12% 53px 12%;
+    margin-top: 0px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+}
+
+.header-showcase__wrapper {
+  position: relative;
+  min-height: 462px;
+  background-image: url('../img/mobile/iphone-5-in-hand.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 140%;
+
+  @media (min-width: 321px) {
+    background-image: url('../img/tablet/iphone-6-in-hand.png');
+  }
+
+  @media (min-width: 426px) and (max-width: 659px) {
+    background-size: 573px;
+  }
+
+  @media #{$tablet} {
+    min-height: 729px;
+    background-position: bottom left 50%;
+    background-size: 875px;
+  }
+
+  @media #{$desktop} {
+    width: 1200px;
+    min-height: 857px;
+    margin: 0 auto;
+    background-image: url('../img/desktop/iphone-10-in-hand.png');
+    background-position: bottom right;
+    background-size: 1050px;
+  }
+}
+
+.inner-header .header-showcase__wrapper {
+  min-height: 238px;
+  background: none;
+
+  @media #{$tablet} {
+    min-height: 340px;
+  }
+
+  @media #{$desktop} {
+    min-height: auto;
+    height: 395px;
+  }
+}
+
+.smile-hover {
+  position: absolute;
+  content: "Всем привет!";
+  bottom: 46px;
+  left: 35%;
+  width: 110px;
+  height: 51%;
+  //background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+
+  @media (min-width: 321px) {
+    left: auto;
+    right: 20%;
+    width: 180px;
+    height: 66%;
+  }
+
+  @media #{$tablet} {
+    right: auto;
+    left: 52%;
+    bottom: 90px;
+    width: 225px;
+    height: 61.5%;
+  }
+
+  @media #{$desktop} {
+    right: auto;
+    left: 52%;
+    bottom: 110px;
+    width: 270px;
+    height: 62.5%;
+  }
+}
+
+.inner-header .smile-hover {
+  display: none;
+}
+
+.smile-hover:hover + .header-showcase__wrapper {
+  background-image: url('../img/mobile/only-smile.png'),
+                    url('../img/mobile/iphone-5-in-hand.png');
+
+  @media (min-width: 321px) {
+    background-image: url('../img/tablet/only-smile.png'),
+                      url('../img/tablet/iphone-6-in-hand.png');
+  }
+
+  @media #{$tablet} {
+    background-image: url('../img/tablet/only-smile.png'),
+                      url('../img/tablet/iphone-6-in-hand.png');
+  }
+
+  @media #{$desktop} {
+    background-image: url('../img/desktop/only-smile.png'),
+                      url('../img/desktop/iphone-10-in-hand.png');
+  }
+}
+
+.header-showcase__presentation {
+  background-color: #1d2631;
+  position: absolute;
+  bottom: -256px;
+  left: 0;
+
+  @media #{$tablet} {
+    background-color: transparent;
+    position: absolute;
+    top: 225px;
+    left: 0;
+    bottom: auto;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    width: 340px;
+  }
+}

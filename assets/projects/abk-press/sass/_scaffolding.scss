@@ -1,0 +1,83 @@
+@import "variables";
+
+main {
+  display: block;
+}
+
+._customer-container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1227px;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: 996px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: 1200px) {
+     max-width: 1227px;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+
+  li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: -10px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $color-text__66;
+    }
+  }
+}
+
+main {
+  display: block;
+}

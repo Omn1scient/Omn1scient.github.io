@@ -43,10 +43,34 @@ function ready() {
   */
 
 
-  $('.phoneMask').mask('7 (999) 999-99-99');
+  //$('.phoneMask').mask('7 (999) 999-99-99');
 }
 
 document.addEventListener("DOMContentLoaded", ready);
+
+
+// Получаем все элементы .nav-item__dropdown
+let dropdownItems = document.querySelectorAll('.nav-item__dropdown');
+
+// Обходим все элементы
+dropdownItems.forEach(function(item) {
+  // Находим соответствующий выпадающий список
+  let dropdownList = item.querySelector('.navbar__dropdown-list');
+
+  // При наведении на элемент
+  item.addEventListener('mouseover', function() {
+    // Вычисляем высоту списка
+    let listHeight = dropdownList.scrollHeight;
+    // Применяем вычисленную высоту к стилям списка
+    dropdownList.style.maxHeight = listHeight + 'px';
+  });
+
+  // При уходе мыши с элемента
+  item.addEventListener('mouseout', function() {
+    // Сбрасываем значение max-height
+    dropdownList.style.maxHeight = '';
+  });
+});
 
 
 // smooth scrolling to anchor
@@ -58,6 +82,7 @@ $(document).on('click', 'a[data-scroll^="#"]', function (event) {
   }, 700);
 });
 
+/*
 
 let swiper = new Swiper(".mySlider", {
   slidesPerView: 3,
@@ -107,5 +132,7 @@ let swiper = new Swiper(".mySlider", {
     prevEl: '.swiper-button-prev-unique',
   },
 });
+
+*/
 /******/ })()
 ;

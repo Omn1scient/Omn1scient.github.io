@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Главная страница</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/favicon/hard-drive.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="assets/css/swiper.min.css"/-->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="home" style="opacity: 1">
+
+<header class="header">
+  <div class="header__top-line-links">
+    <div class="container">
+      <nav class="menu-main">
+        <ul class="main-list">
+          <li class="header__menu--home">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__menu--memory">
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Накопители
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <div class="dropdown-menu__header-menu">
+                  <a href="hdd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/hdd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Жесткие диски</span>
+                  </a>
+                  <a href="usb.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/usb-flash-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">USB флешки</span>
+                  </a>
+                  <a href="sd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/sd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Карты памяти SD</span>
+                  </a>
+                  <a href="micro-sd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/micro-sd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Карты памяти MicroSD</span>
+                  </a>
+                  <a href="ssd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/ssd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">SSD носители</span>
+                  </a>
+                  <a href="raid.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/raid-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">RAID массивы</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu--prices">
+            <a href="prices.html">Цены</a>
+          </li>
+          <li class="header__menu--faq">
+            <a href="faq.html">Вопрос и Ответ</a>
+          </li>
+          <li class="header__menu--clients">
+            <a href="/">В Портфолио</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="top-line">
+      <div class="wrap-logo">
+        <a href="index.html">
+          <img src="assets/images/icons/logo-header.png" alt="Лого" width="60" height="60">
+          <div class="header__logo-info">
+            <span>HDD-Repair</span>
+            <p>Восстановление данных</p>
+          </div>
+        </a>
+      </div>
+      <div class="wrap-info">
+        <div class="city">
+          <p class="city-c">ул. Радиотехников 28</p>
+        </div>
+        <ul class="info-list">
+          <li class="info__time">Звоните круглосуточно</li>
+        </ul>
+      </div>
+      <div class="call-wrap">
+        <div class="call-icon">
+          <a href="#modal-callrequest" class="icon" data-toggle="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6" fill="#9b07e7">
+              <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"></path></svg>
+          </a>
+        </div>
+        <div class="call-info">
+          <a href="tel:+" class="">8 (862) 555-55-55</a>
+          <a class="request-call" href="#modal-callrequest" data-toggle="modal">Заказать звонок</a>
+        </div>
+        <div class="hamburger-wrapper">
+          <div class="header-hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header__mobile-menu">
+  <div class="header__mobile-menu-container container">
+    <ul class="header__mobile-menu-list">
+      <li class="header__mobile-menu-item">
+        <a href="index.html" class="">Главная</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="#mobileDevicesMenu" class="" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" role="button">
+          Носители информации
+          <i class="header__menu-item-icon"></i>
+        </a>
+        <div class="collapse" id="mobileDevicesMenu">
+          <div class="header__mobile-category">
+            <div class="header__category-row row no-gutters">
+              <div class="header__category-col col-12">
+                <a href="hdd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/hdd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Жесткие диски</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="usb.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/usb-flash-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">USB флешки</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="sd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/sd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Карты памяти SD</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="micro-sd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/micro-sd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Карты памяти MicroSD</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="ssd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/ssd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">SSD носители</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="raid.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/raid-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">RAID массивы</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="prices.html" class="">Цены</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="faq.html" class="">Вопрос и ответ</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="/" class="">В Портфолио</a>
+      </li>
+    </ul>
+    <p class="header__mobile-menu-addr">ул. Радиотехников 28</p>
+    <div class="header__mobile-btn-wrap">
+      <a href="#modal-callrequest" class="btn" data-toggle="modal">Обратный звонок</a>
+    </div>
+  </div>
+</div>
+<div class="header-holder"></div>
+
+<section class="home-main-block" style="background-image: url('assets/images/misc/home-main-block_bg.jpg');">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <h1 class="home-main-block__title" style="max-width: 720px">Восстановление данных с различных накопителей</h1>
+        <form action="" method="post" class="contact-form request-form">
+          <p class="form-header">Оставьте заявку и мы с вами свяжемся</p>
+          <div class="wrap-form">
+            <span class="phone">
+              <input type="tel" name="phone" value="" class="form-control" placeholder="Телефон*">
+              <input type="tel" name="phone" value="" class="f-Mask" placeholder="Телефон*">
+            </span>
+            <button type="submit" class="btn btn-inverted">Оставить заявку</button>
+          </div>
+          <p class="form-personal">Нажимая кнопку “Оставить заявку”, вы даете согласие на обработку ваших
+            персональных данных</p>
+        </form>
+        <div class="wrap-cases">
+          <p class="cases-title">За 1 год мы восстановили</p>
+          <ul class="cases-list">
+            <li>
+              <span class="point-cases">
+                <svg viewBox="0 -57 512.00003 512" width="26" height="26" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m506.039062 180.492188c-7.773437-12.554688-21.523437-20.046876-36.78125-20.046876h-38.085937v-69.863281c0-16.863281-14.226563-30.578125-31.710937-30.578125h-186.441407c-.273437 0-.457031-.078125-.53125-.125l-33.367187-46.667968c-5.917969-8.273438-15.675782-13.210938-26.105469-13.210938h-121.304687c-17.488282 0-31.710938 13.71875-31.710938 30.578125v335.148437c0 17.257813 14.570312 31.300782 32.484375 31.300782h377.363281c5.878906 0 10.957032-3.394532 13.414063-8.320313l.011719.003907 84.5625-169.839844c6.132812-12.308594 5.457031-26.65625-1.796876-38.378906zm-474.328124-150.492188h121.304687c.898437 0 1.507813.394531 1.699219.664062l33.417968 46.734376c5.640626 7.890624 14.945313 12.605468 24.886719 12.605468h186.441407c1.046874 0 1.578124.492188 1.710937.667969v69.773437h-271.472656c-16.835938 0-32.148438 9.488282-39.011719 24.175782l-60.6875 129.871094v-283.824219c.132812-.175781.664062-.667969 1.710938-.667969zm449.269531 175.5-80.421875 161.523438h-361.992188l79.300782-169.699219c1.921874-4.113281 6.679687-6.878907 11.832031-6.878907h339.558593c4.792969 0 9.007813 2.183594 11.273438 5.839844 1.273438 2.058594 2.382812 5.328125.449219 9.214844zm0 0"></path></svg>
+              </span><span class="digit-number">34 263 TB</span><br>
+              <span class="text-cases">данных</span>
+            </li>
+            <li>
+              <span class="point-cases">
+                <svg id="Layer_1" enable-background="new 0 0 48 60" viewBox="0 0 54 60" height="26" width="26" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m43.026 60h-37.993c-2.759 0-5.003-2.245-5.003-5.004v-49.992c0-2.759 2.245-5.004 5.003-5.004h37.993c2.759 0 5.003 2.245 5.003 5.004v49.992c.001 2.759-2.244 5.004-5.003 5.004zm-37.993-58c-1.656 0-3.003 1.348-3.003 3.004v49.992c0 1.656 1.348 3.004 3.003 3.004h37.993c1.656 0 3.003-1.348 3.003-3.004v-49.992c0-1.656-1.347-3.004-3.003-3.004z"></path><path d="m24.03 34c-4.962 0-9-4.037-9-9s4.038-9 9-9c4.963 0 9 4.037 9 9s-4.037 9-9 9zm0-16c-3.86 0-7 3.141-7 7s3.14 7 7 7 7-3.141 7-7-3.14-7-7-7z"></path><path d="m24.03 29c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.795 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z"></path><path d="m14.23 51c-2.867 0-5.2-2.333-5.2-5.2 0-2.105 1.256-3.99 3.2-4.8l9.416-3.923c.374-.156.805-.07 1.091.216.287.286.372.718.216 1.092l-3.923 9.415c-.81 1.944-2.694 3.2-4.8 3.2zm5.943-11.143-7.174 2.988c-1.196.499-1.969 1.658-1.969 2.954 0 1.765 1.436 3.2 3.2 3.2 1.296 0 2.456-.773 2.954-1.97z"></path><path d="m20.03 60h-14.997c-2.759 0-5.003-2.245-5.003-5.004v-9.996c0-.553.448-1 1-1h5c.552 0 1 .447 1 1 0 4.411 3.589 8 8 8h5c.552 0 1 .447 1 1v5c0 .553-.448 1-1 1zm-18-14v8.996c0 1.656 1.348 3.004 3.003 3.004h13.997v-3h-4c-5.176 0-9.447-3.954-9.95-9z"></path><path d="m24.03 45c-1.474 0-2.993-.179-4.515-.53-.287-.066-.53-.256-.665-.518-.134-.262-.146-.57-.033-.842l1.355-3.253-5.563 2.317c-.294.123-.629.098-.902-.067-6.061-3.664-9.677-10.06-9.677-17.107 0-11.028 8.972-20 20-20s20 8.972 20 20-8.972 20-20 20zm-2.898-2.246c.98.163 1.95.246 2.897.246 9.925 0 18-8.075 18-18s-8.075-18-18-18-18 8.075-18 18c0 6.175 3.087 11.794 8.286 15.131l7.33-3.054c.374-.156.805-.07 1.091.216.287.286.372.718.216 1.092z"></path></svg>
+              </span><span class="digit-number">821</span><span class="text-cases">жестких дисков</span>
+            </li>
+            <li>
+              <span class="point-cases">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399.8 399.8" width="26" height="26" fill="#fff"><path d="M397.5 87L312.8 2.3C311.3 0.8 309.3 0 307.1 0s-4.2 0.8-5.7 2.3l-67.8 67.9c-4.7-4-10.7-6.2-17-6.2 -7 0-13.6 2.7-18.6 7.7L26.7 243c0 0 0 0 0 0 -35.7 35.7-35.6 94 0.2 129.9 17.3 17.3 40.4 26.9 64.9 27 0.1 0 0.2 0 0.3 0 24.4 0 47.4-9.5 64.6-26.7 0 0 0 0 0.1-0.1l171.3-171.3c5-4.9 7.7-11.5 7.7-18.6 0-6.3-2.2-12.3-6.2-17l67.8-67.8C400.6 95.2 400.6 90.2 397.5 87zM313.6 159.6c-0.2 0.2-0.3 0.3-0.4 0.5 -0.1 0.1-0.3 0.3-0.4 0.4 -3.1 3.1-3.1 8.2 0 11.3l4.1 4.1c1.9 1.9 3 4.5 3 7.3 0 2.7-1.1 5.3-3 7.2L145.6 361.7c0 0 0 0-0.1 0.1 -14.2 14.2-33.2 22-53.4 22 -0.1 0-0.1 0-0.2 0 -20.3-0.1-39.3-8-53.6-22.3 -29.6-29.6-29.7-77.7-0.2-107.2 0 0 0 0 0 0L209.4 82.9c1.9-1.9 4.5-3 7.2-3s5.3 1.1 7.2 3l68.9 68.9c3.1 3.1 8.2 3.1 11.3 0 3.1-3.1 3.1-8.2 0-11.3l-59.1-59.1 62.1-62.1 73.4 73.4L313.6 159.6z"></path><path d="M290.1 58.9c-3.1-3.1-8.2-3.1-11.3 0 -0.1 0.1-0.1 0.1-0.2 0.2L261.8 75.8c-3.1 3.1-3.1 8.2 0 11.3l16.9 16.9c1.5 1.5 3.5 2.3 5.7 2.3h0c2.1 0 4.2-0.8 5.7-2.3l17-17c3.1-3.1 3.1-8.2 0-11.3L290.1 58.9zM284.4 87.1l-5.6-5.6 5.7-5.7 5.6 5.6L284.4 87.1z"></path><path d="M295.8 121.1l16.9 16.9c1.5 1.5 3.5 2.3 5.7 2.3 0 0 0 0 0 0 2.1 0 4.2-0.8 5.7-2.3l17-17c3.1-3.1 3.1-8.2 0-11.3L324.1 92.8c-3.1-3.1-8.2-3.1-11.3 0 -0.1 0.1-0.1 0.1-0.2 0.2l-16.8 16.8C292.6 112.9 292.6 118 295.8 121.1zM318.4 109.8l5.6 5.6 -5.7 5.7 -5.6-5.6L318.4 109.8z"></path><path d="M229.9 109.9c-3.7-3.7-8.7-5.8-14-5.8 -5.3 0-10.3 2.1-14 5.8L86.5 225.3c0 0 0 0 0 0 -24.2 24.2-24.1 63.6 0.2 87.9 12.2 12.2 28.1 18.3 44.1 18.3 15.9 0 31.7-6 43.8-18.1 0 0 0 0 0.1-0.1l115.4-115.4c3.7-3.7 5.8-8.7 5.8-14 0-5.3-2.1-10.3-5.8-14L229.9 109.9zM278.6 186.6L163.2 302c0 0 0 0 0 0 -8.9 8.9-20.7 13.4-32.4 13.4 -11.9 0-23.7-4.5-32.8-13.6 -18-18-18.1-47.3-0.2-65.2l0 0 115.4-115.4c1-1 2.1-1.1 2.7-1.1 0.6 0 1.7 0.1 2.7 1.1l60.1 60.1c1 1 1.1 2.1 1.1 2.7S279.6 185.7 278.6 186.6z"></path></svg>
+              </span><span class="digit-number">1463</span><span class="text-cases">USB накопителей</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="remont-category padding">
+  <div class="remont-category__container container">
+    <h2 class="remont-category__title section-title">Тип вашего носителя</h2>
+    <div class="remont-category__items">
+      <a href="hdd.html" class="remont-category__item">
+        <div class="remont-category__item-img">
+          <img src="assets/images/icons/category-HDD.png" alt="HDD">
+        </div>
+        <p class="remont-category__item-title">HDD</p>
+      </a>
+      <a href="usb.html" class="remont-category__item">
+        <div class="remont-category__item-img">
+          <img src="assets/images/icons/category-USB.png" alt="USB">
+        </div>
+        <p class="remont-category__item-title">USB</p>
+      </a>
+      <a href="sd.html" class="remont-category__item">
+        <div class="remont-category__item-img">
+          <img src="assets/images/icons/category-SD.png" alt="SD">
+        </div>
+        <p class="remont-category__item-title">SD</p>
+      </a>
+      <a href="micro-sd.html" class="remont-category__item">
+        <div class="remont-category__item-img">
+          <img src="assets/images/icons/category-micro-SD.png" alt="SD">
+        </div>
+        <p class="remont-category__item-title">Micro SD</p>
+      </a>
+      <a href="ssd.html" class="remont-category__item">
+        <div class="remont-category__item-img">
+          <img src="assets/images/icons/category-SSD.png" alt="SSD">
+        </div>
+        <p class="remont-category__item-title">SSD</p>
+      </a>
+      <a href="raid.html" class="remont-category__item">
+        <div class="remont-category__item-img">
+          <img src="assets/images/icons/category-RAID.png" alt="RAID">
+        </div>
+        <p class="remont-category__item-title">RAID</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="advantages padding section-divider">
+  <div class="advantages__container container">
+    <h2 class="advantages__title section-title">Преимущества восстановления данных в нашем центре</h2>
+    <div class="row ">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-1.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Чистая комната <br> ISO 14644-1
+          </p>
+          <span>Для работы с накопителями у нас есть чистое помещение</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-2.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Бесплатная <br> диагностика
+          </p>
+          <span>В случае ремонта вашего носителя или восстановления с него данных</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-3.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Современное <br> оборудование
+          </p>
+          <span>Новейшее оборудование позволяет без рисков работать с данными</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-4.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Замена <br> механики диска
+          </p>
+          <span>Мы не только восстанавливаем данные, но и ремонтируем накопители</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-5.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Бесплатная <br> доставка
+          </p>
+          <span>Курьер бесплатно доставит ваш диск в сервис центр и обратно</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-6.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Восстановление <br> RAID массива
+          </p>
+          <span>Мы работаем как с физическими RAID-массивами, так и с виртуальными</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-7.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Все запчасти <br> в наличии
+          </p>
+          <span>Оригинальные запчасти от производителя всегда в наличии</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <img src="assets/images/misc/advantage-8.jpg" alt="">
+          </div>
+          <p class="advantages__item-text">
+            Сразу приступаем <br> к работе
+          </p>
+          <span>Мы ценим время наших клиентов и выполняем работы в кратчайшие сроки</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="storage-info padding section-divider">
+  <div class="storage-info__container container">
+    <h2 class="section-title">Восстановление жёстких дисков и твёрдотельных накопителей</h2>
+    <p class="storage-info__text">
+      Носители такого типа применяются для хранения данных на персональных компьютерах. Современные модели вмещают до нескольких терабайт информации, и потеря такого количества данных может стать настоящей катастрофой.
+    </p>
+    <div class="storage-info__items-row row">
+      <div class="col-12 col-md-6">
+        <div class="storage-info__item">
+          <div class="storage-info__icon-header">
+            <img src="assets/images/icons/storage-HDD.png" alt="hdd">
+            <h4>Восстановление HDD</h4>
+          </div>
+          <p class="storage-info__desc">
+            Несмотря на появление более современных носителей, жёсткий диск всё ещё активно используется. Особенность магнитного накопителя в том, что стёртая информация не удаляется из ячеек памяти сразу. Она хранится до тех пор, пока её не заменят новыми загруженными данными. Если пользователь обращается к нам сразу после того, как неприятность произошла, сотрудники лаборатории возвращают файлы на винчестер в подавляющем большинстве случаев. Если же HDD уронили или он вышел из строя по другим причинам, техники сделают всё возможное, чтобы отремонтировать устройство и вернуть доступ к данным.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="storage-info__item">
+          <div class="storage-info__icon-header">
+            <img src="assets/images/icons/storage-SSD.png" alt="SSD">
+            <h4>Восстановление SSD</h4>
+          </div>
+          <p class="storage-info__desc">
+            Как носители нового поколения твердотельные накопители имеют много преимуществ в сравнении с винчестерами, однако вернуть на них удалённые файлы сложнее. Тем не менее в нашей лаборатории есть необходимое программное обеспечение, которое позволяет решить проблему без физического вмешательства. Если же SSD повреждён, мастера выпаивают из платы чипы памяти и считывают хранящуюся на них информацию при помощи NAND-ридеров, а затем собирают разрозненные фрагменты файлов воедино по особому алгоритму
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 class="section-title">Восстановление данных с внешних накопителей</h2>
+    <p class="storage-info__text">
+      Также у нас в сервис центре вы можете восстановить внешний накопитель любого производителя, как на базе жесткого диска, так и твердотельный.
+    </p>
+    <div class="storage-info__wide-image">
+      <img src="assets/images/misc/storage-portable.jpg" alt="portable">
+    </div>
+    <h2 class="section-title">Восстановление запоминающих устройств на основе flash-памяти</h2>
+    <p class="storage-info__text">
+      Несмотря на небольшие размеры, современные флеш-накопители вмещают значительные объёмы информации. В зависимости от разновидности, такие носители совместимы с персональными компьютерами или небольшими гаджетами.
+    </p>
+    <div class="storage-info__items-row row">
+      <div class="col-12 col-md-6">
+        <div class="storage-info__item">
+          <div class="storage-info__icon-header">
+            <img src="assets/images/icons/storage-USB.png" alt="usb flash">
+            <h4>Восстановление флешек</h4>
+          </div>
+          <p class="storage-info__desc">
+            Эти популярные носители столь же ненадёжны, сколь и удобны. Если сам чип памяти не повреждён, инженеры быстро восстановят утраченные данные. Среди прочего оборудования в лаборатории имеется контроллер PC-3000 Flash, который позволяет считывать данные с блока памяти напрямую. Таким образом удаётся вернуть файлы более, чем в девяноста процентах случаев.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="storage-info__item-image">
+          <img src="assets/images/misc/storage-USB.jpg" alt="usb flash">
+        </div>
+      </div>
+    </div>
+    <h2 class="section-title">Восстановление карт памяти</h2>
+    <p class="storage-info__text">
+      Несмотря на небольшие размеры, современные флеш-накопители вмещают значительные объёмы информации. В зависимости от разновидности, такие носители совместимы с персональными компьютерами или небольшими гаджетами.
+    </p>
+    <div class="storage-info__items-row row">
+      <div class="col-12 col-md-6">
+        <div class="storage-info__item">
+          <div class="storage-info__icon-header">
+            <img src="assets/images/icons/storage-SD.png" alt="sd">
+            <h4>Восстановление SD</h4>
+          </div>
+          <p class="storage-info__desc">
+            Владельцам фотоаппаратов знакома проблема поломки карт памяти, которыми оснащены эти устройства. Мы поможем восстановить утерянные фотографии и видеофайлы, даже если сама фотокамера восстановлению не подлежит.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="storage-info__item">
+          <div class="storage-info__icon-header">
+            <img src="assets/images/icons/storage-microSD.png" alt="micro sd">
+            <h4>Восстановление MicroSD</h4>
+          </div>
+          <p class="storage-info__desc">
+            MicroSD в свое время стали настоящим спасением для владельцев смартфонов с небольшим объемом памяти. Мы знаем, как сохранить записанные на них текстовые и графические файлы.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 class="section-title">Восстановление RAID-массивов</h2>
+    <p class="storage-info__text">
+      Корпоративные клиенты обращаются к нам для восстановления информации с RAID-массивов. Группы из нескольких связанных HDD или SSD используются для хранения огромных баз данных, жизненно важных для всей компании. Мы помогаем заказчикам восстановить RAID-массивы и избежать финансовых потерь.
+    </p>
+    <div class="storage-info__wide-image">
+      <img src="assets/images/misc/storage-raid.jpg" alt="raid">
+    </div>
+    <div class="storage-info__items-row row">
+      <div class="col-12">
+        <div class="storage-info__item">
+          <div class="storage-info__icon-header">
+            <img src="assets/images/icons/storage-other.png" alt="other storage">
+            <h4>Дополнительные услуги</h4>
+          </div>
+          <p class="storage-info__desc">
+            Помимо упомянутых выше накопителей, сервисные инженеры Центра восстановления информации восстанавливают и возвращают данные с видеорегистраторов, Макбуков и телефонов на базе Android.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="request" id="request-anchor">
+  <div class="request__background padding" style="background-image: url('assets/images/misc/request-bg.jpg')">
+    <div class="request__container container">
+      <div class="request__row row m-0">
+        <div class="request__centerer">
+          <h2 class="request__title section-title text-uppercase">Заявка на восстановление данных</h2>
+          <p class="request__discount">При оформлении заявки - <span>скидка 10%</span></p>
+          <div class="row">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
+              <form action="" class="request__form ajax_form" method="post">
+                <div class="request__form-row row">
+                  <div class="request__form-col col-12 col-md-6">
+                    <div class="request__form-name">
+                      <label class="request__input-label visually-hidden" for="input-name">Ваше имя</label>
+                      <input class="request__input-name" name="name" type="text" id="input-name" value="" placeholder="Ваше имя" autocomplete="off" required="">
+                      <span class="error_name"></span>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-6">
+                    <div class="request__form-phone">
+                      <label class="request__input-label visually-hidden" for="input-phone">Телефон</label>
+                      <input class="request__input-phone f-Mask" name="phone" type="text" id="input-phone" value="" autocomplete="off" placeholder="Телефон" required="" maxlength="17">
+                      <span class="error_phone"></span>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-12">
+                    <div class="request__form-textarea">
+                      <label class="request__input-label visually-hidden" for="input-text">Мобильный телефон</label>
+                      <textarea style="resize: none;" id="input-text" placeholder="Дополнительное сообщение"></textarea>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-12">
+                    <div class="request__input-checkbox-wrap">
+                      <input class="request__input-checkbox custom-checkbox" type="checkbox" id="input-checkbox__request" required="" checked="">
+                      <label class="request__input-checkbox-label custom-checkbox-label" for="input-checkbox__request"></label>
+                      <p class="request__input-checkbox-text">
+                        Нажимая кнопку «Отправить», я даю свое
+                        согласие на обработку моих персональных данных, в соответствии с Федеральным законом от
+                        27.07.2006 года №152-ФЗ «О персональных данных».
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="request__submit-button-wrapper d-flex">
+                  <button type="submit" class="request__submit-button btn btn btn-inverted"><span>Отправить</span></button>
+                </div>
+                <p class="request__discount d-none">При записи с сайта - <span>скидка 10%</span></p>
+              </form>
+            </div>
+            <div class="col-12 col-sm-2 col-md-4 col-lg-5 col-xl-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stages padding section-divider">
+  <div class="stages__container container">
+    <p class="section-pre-text">
+      В компьютерную эпоху информация стала одной из основных ценностей. Её потеря чревата большими проблемами как для частных пользователей, так и для бизнеса. Вот почему спрос на услуги восстановления данных в последние годы только растёт. Компания Центр восстановления данных занимается профессиональным ремонтом повреждённых носителей и возвращает файлы независимо от того, по какой причине они были утрачены.
+    </p>
+    <h2 class="section-title">Этапы работ в нашем сервис центре</h2>
+    <div class="stages-wrap">
+      <div class="stages-item">
+        <span class="stages-number">1</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/delivery-icon2.png" alt="Бесплатная доставка">
+        </div>
+        <p class="stages-head">Доставка</p>
+        <p>Курьер бесплатно доставит ваш носитель в сервис центр и обратно в удобное время и место</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">2</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/diagnostics-icon2.png" alt="Диагностика">
+        </div>
+        <p class="stages-head">Диагностика</p>
+        <p>Мастера бесплатно осмотрят носитель и сформируют стоимость восстановления данных</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">3</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/repair-icon2.png" alt="Восстановление">
+        </div>
+        <p class="stages-head">Восстановление</p>
+        <p>Применяются различные методики для восстановления данных на профессиональном оборудовании</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">4</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/quality-icon2.png" alt="Контроль">
+        </div>
+        <p class="stages-head">Контроль</p>
+        <p>Контроль качества на всех этапах работ и конфиденциальность вашей информации</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">5</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/wallet-icon2.png" alt="Оплата">
+        </div>
+        <p class="stages-head">Оплата</p>
+        <p>Услуги оплачиваются только при успешном восстановлоении данных без потерь</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="our-clients our-clients--demo section-divider padding">
+  <div class="our-clients__container container">
+    <h2 class="our-clients__title section-title">Наши клиенты</h2>
+    <div class="our-clients__row row">
+      <div class="our-clients__col col-12 col-md-6">
+        <div class="our-clients__item">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-12 col-lg-5">
+              <div class="our-clients__image-wrap">
+                <a href="assets/images/clients/alfa.jpg" class="" data-fancybox="">
+                  <img src="assets/images/clients/alfa.jpg" class="" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-12 col-lg-7 ">
+              <div class="our-clients__info">
+                <div class="our-clients__header">
+                  <img src="assets/images/clients/alfa-logo.png" alt="">
+                </div>
+                <div class="our-clients__text">
+                  «Альфа-Банк» выражает признательность и благодарность сотрудникам сервис центра HDD-Repair за отличные результаты, достигнутые в процессе сотрудничества. Все работы были
+                  выполнены в
+                  строго оговоренные сроки с надлежащим качеством.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-clients__col col-12 col-md-6">
+        <div class="our-clients__item">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-12 col-lg-5">
+              <div class="our-clients__image-wrap">
+                <a href="assets/images/clients/astahov.jpg" class="" data-fancybox="">
+                  <img src="assets/images/clients/astahov.jpg" class="" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-12 col-lg-7 ">
+              <div class="our-clients__info">
+                <div class="our-clients__header">
+                  <img src="assets/images/clients/astahov-logo.png" alt="">
+                </div>
+                <div class="our-clients__text">
+                  "Коллегия адвокатов Павла Астахова" в лице председателя коллегии Данильченко В.Б. выражает огромную благодарность компании HDD-Repair за оперативное восстановление данных. Желаем вдохновения неиссякаемой энергии и успехов в бизнесе.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-clients__col col-12 col-md-6">
+        <div class="our-clients__item">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-12 col-lg-5">
+              <div class="our-clients__image-wrap">
+                <a href="assets/images/clients/gazprom.jpg" class="" data-fancybox="">
+                  <img src="assets/images/clients/gazprom.jpg" class="" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-12 col-lg-7 ">
+              <div class="our-clients__info">
+                <div class="our-clients__header">
+                  <img src="assets/images/clients/gazprom-logo.png" alt="">
+                </div>
+                <div class="our-clients__text">
+                  ОА «Газпромбанк Лизинг» выражает всем сотрудникам компании ООО «HDD-Repair» благодарность за профессиональное и своевременное выполнение всех обязательств по восстановлению данных с поврежденного жесткого диска.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-clients__col col-12 col-md-6">
+        <div class="our-clients__item">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-12 col-lg-5">
+              <div class="our-clients__image-wrap">
+                <a href="assets/images/clients/infocom.jpg" class="" data-fancybox="">
+                  <img src="assets/images/clients/infocom.jpg" class="" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-12 col-lg-7 ">
+              <div class="our-clients__info">
+                <div class="our-clients__header">
+                  <img src="assets/images/clients/infocom-logo.png" alt="">
+                </div>
+                <div class="our-clients__text">
+                  ЗАО "Инфоком" благодарит коллектив сервис-центра HDD-Repair за сотрудничество и оперативность в решении сложной технической задачи. За время нашего сотрудничества специалисты
+                  показали себя настоящими профессионалами. Желаем успеха и процветания, будем рады продолжить с Вами сотрудничество.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="our-clients__button-wrap">
+      <a href="#" class="our-clients__button btn btn-inverted"><span>Еще клиенты</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__head">
+    <div class="foot__container container">
+      <div class="footer__head-text">
+        <p>
+          Профессиональное восстановление данных с любых носителей. Официальный партнер по восстановлению данных Seagate и Western Digital в России.
+        </p>
+      </div>
+      <div class="footer__head-text">
+        <p>
+          Инженеры HDD-Repair - эксперты в
+          своей отрасли, большинство из которых имеют более чем десятилетний опыт работы. Мы успешно работаем с самыми сложными случаями восстанавления данных, даже после неудачных попыток других
+          компаний. Вам не нужно ждать и тратить время на поиски доноров. Все запчасти в наличии, располагаем самым большим складом запчастей в Сочи. Уникальная чистая комната и
+          современное оборудование позволяют восстановить то, что другие считают невозможным.
+        </p>
+      </div>
+      <div class="footer__head-social">
+        <div class="footer__head-social-row row">
+          <div class="footer__head-social-col col-12 col-sm-12">
+            <div class="footer__head-country">
+              <div class="footer__head-country-wrapper">
+                <div class="footer__head-country-icon-wrap">
+                  <img class="flag-icon" src="assets/images/icons/world.png" width="25" height="25">
+                </div>
+                <p class="footer__head-country-address-wrap">
+                  <span>Россия, Сочи, ул. Радиотехников 28</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__top">
+    <div class="footer__container container">
+      <div class="footer__top-row row">
+        <div class="footer__top-col col-6 col-sm-6 col-md-4">
+          <div class="footer__top-menu">
+            <a class="footer__top-head-link" href="#">Клиентам</a>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="prices.html">Цены</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="faq.html">Вопрос и ответ</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="/">В Портфолио</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__top-col col-6 col-sm-6 col-md-4">
+          <div class="footer__top-menu">
+            <a class="footer__top-head-link" href="#">Носители <span>информации</span></a>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="hdd.html">Жесткие диски</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="usb.html">USB Флешки</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="sd.html">Карты памяти</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="ssd.html">SSD Накопители</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="raid.html">RAID Массивы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__top-col col-12 col-sm-6 col-md-4">
+          <div class="footer__top-contacts">
+            <p class="footer__top-head-text">Наши контакты</p>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-phone">
+                <i class="svg svg-phone"></i>
+                <a rel="nofollow" href="tel:+">8 (862) 555-55-55</a>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-email">
+                <i class="svg svg-email"></i>
+                <a href="mailto:">supp@hdd-repair.ru</a>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-address">
+                <i class="svg svg-locate"></i>
+                <span>Сервис центр работает: c 9:00 - 20:00</span>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-hotline">
+                <i class="svg svg-headphones"></i>
+                <span>Горячая линия: c 08:00 - 22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom py-4">
+    <div class="footer__container container">
+      <div class="footer__bottom-row row">
+        <div class="footer__bottom-col col-sm-6 col-md-4">
+          <div class="footer__bottom-copy">
+            <p>2012 - 2021 © Сервисный центр HDD-Repair. Восстановление данных с носителей.</p>
+          </div>
+        </div>
+        <div class="footer__bottom-col col-sm-6 col-md-4">
+          <div class="footer__bottom-policy">
+            <a href="#">Политика конфиденциальности, порядок обработки персональных данных</a>
+          </div>
+        </div>
+        <div class="footer__bottom-col col-sm-12 col-md-4">
+          <div class="footer__bottom-payicons-wrapper">
+            <div class="footer__bottom-payicons">
+              <img src="assets/images/icons/payments.png" alt="" width="240" height="32">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="to-top">
+  <div class="to-top__back"></div>
+</div>
+
+<div id="modal-callrequest" class="modal modal-callback fade">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-header__title modal-callrequest__title">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 11 11">
+              <path d="M2.2 1.2l3.3 3.3L8.8 1.2C8.9 1.1 9.1 1 9.3 1 9.7 1 10 1.3 10 1.7c0 0.2-0.1 0.4-0.2 0.5L6.5 5.5 9.8 8.8C9.9 8.9 10 9.1 10 9.3 10 9.7 9.7 10 9.3 10c-0.2 0-0.4-0.1-0.5-0.2L5.5 6.5 2.2 9.8c-0.1 0.1-0.3 0.2-0.5 0.2C1.3 10 1 9.7 1 9.3 1 9.1 1.1 8.9 1.2 8.8L4.5 5.5 1.2 2.2C1.1 2.1 1 1.9 1 1.7 1 1.3 1.3 1 1.7 1 1.9 1 2.1 1.1 2.2 1.2z"></path></svg>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal__container">
+          <div class="modal-callrequest__subtitle">
+            <p class="request__text">Менеджер позвонит вам втечение 10 минут</p>
+          </div>
+          <form action="" class="request__form">
+            <div class="request__form-row row">
+              <div class="request__form-col col-12">
+                <div class="field-wrapper request__form-name">
+                  <label class="request__input-label" for="input-name">Ваше имя</label>
+                  <input class="request__input-name" type="text" id="input-name" placeholder="" required="">
+                </div>
+              </div>
+              <div class="request__form-col col-12">
+                <div class="field-wrapper request__form-phone">
+                  <label class="request__input-label" for="input-phone">Телефон</label>
+                  <input class="request__input-phone f-Mask" type="text" id="input-phone" placeholder="" required="">
+                </div>
+              </div>
+              <div class="request__form-col col-12">
+                <div class="request__form-checkbox-wrapper">
+                  <input class="request__input-checkbox custom-checkbox" type="checkbox" id="input-checkbox__callback" required="" checked="">
+                  <label class="request__input-checkbox-label custom-checkbox-label" for="input-checkbox__callback"></label>
+                  <p class="request__input-checkbox-text">
+                    Я даю согласие на обработку <a href="/confidency/">персональных данных.</a>
+                  </p>
+                </div>
+              </div>
+              <div class="request__form-col request__form-col--button-wrapper col-12">
+                <button type="submit" class="request__submit-button font-weight-bold btn"><span>Заказать звонок</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="request__modal-success modal" id="requestModal">
+  <div class="modal-dialog">
+    <div class="card">
+      <div class="text-right cross">
+        <span class="request__modal-close close" data-dismiss="modal" aria-label="Close">X</span>
+      </div>
+      <div class="card-body text-center">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+          <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle>
+          <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+        </svg>
+        <h4>Спасибо!</h4>
+        <p>Ваша заявка на ремонт отправлена. В ближайшее время с вами свяжется менеджер для согласования дальнейших действий.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--script src="assets/js/swiper.min.js"></script-->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -2,17 +2,15 @@
 @import "../variables.scss";
 
 .stats {
-  width: 320px;
   // responsive
   //width: auto;
   margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
 }
 
 .stats__header {
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-bottom: 25px;
-  padding-left: 40px;
+  padding: 30px 40px 25px 40px;
   color: #000000;
   background-color: #ffffff;
   //background-color: red;
@@ -217,7 +215,7 @@
   }
 
   .stats__header {
-    width: 240px;
+    width: 320px;
     flex-direction: column;
     justify-content: flex-start;
 

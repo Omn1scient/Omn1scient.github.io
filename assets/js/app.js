@@ -134,5 +134,89 @@ let swiper = new Swiper(".mySlider", {
 });
 
 */
+
+
+// Получаем все элементы .tab-pane
+let tabPanes = document.querySelectorAll('.tab-pane');
+
+// Перебираем каждый элемент .tab-pane
+tabPanes.forEach(function(tabPane) {
+  // Добавляем обработчик события swipe к каждому элементу .tab-pane
+  tabPane.addEventListener('touchstart', handleTouchStart, false);
+  tabPane.addEventListener('touchmove', handleTouchMove, false);
+
+  // Сохраняем начальные координаты касания
+  let startX;
+
+  // Обработчик touchstart события
+  function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+  }
+
+  // Обработчик touchmove события
+  function handleTouchMove(event) {
+    if (!startX) return;
+
+    let currentX = event.touches[0].clientX;
+    let diffX = startX - currentX;
+
+    let ariaLabelledby;
+    let navLink;
+    let nextSlide;
+    let prevSlide;
+
+    // Если свайп влево
+    if (diffX > 100) {
+      // Находим значение атрибута aria-labelledby
+      ariaLabelledby = tabPane.getAttribute('aria-labelledby');
+
+      // Находим элемент .nav-link на основе значения id и атрибута aria-labelledby
+      navLink = document.querySelector('.nav-link[id="' + ariaLabelledby + '"]').parentNode;
+
+      // Проверяем, есть ли следующий соседний элемент
+      if (navLink.nextElementSibling) {
+        nextSlide = navLink.nextElementSibling.querySelector('.nav-link');
+
+        // Эмулируем клик на элементе .nav-link
+        nextSlide.click();
+      }
+
+      // Если свайп вправо
+    } else if (diffX < -100) {
+      // Находим значение атрибута aria-labelledby
+      ariaLabelledby = tabPane.getAttribute('aria-labelledby');
+
+      // Находим элемент .nav-link на основе значения id и атрибута aria-labelledby
+      navLink = document.querySelector('.nav-link[id="' + ariaLabelledby + '"]').parentNode;
+
+      // Проверяем, есть ли предыдущий соседний элемент
+      if (navLink.previousElementSibling) {
+        prevSlide = navLink.previousElementSibling.querySelector('.nav-link');
+
+        // Эмулируем клик на элементе .nav-link
+        prevSlide.click();
+      }
+    }
+  }
+});
+
+
+$(window).scroll(function() {
+  var footerHeight = $('footer').height();
+  var scrollTop = $(window).scrollTop();
+  var pageHeight = $(document).height();
+  var bottomDifference = pageHeight - footerHeight;
+
+  if (scrollTop >= 300 && scrollTop < bottomDifference - 500) {
+    $('.to-top').addClass('show');
+  } else {
+    $('.to-top').removeClass('show');
+  }
+});
+
+$('.to-top').click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 300, 'swing');
+  return false;
+});
 /******/ })()
 ;

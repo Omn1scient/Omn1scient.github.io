@@ -1,19 +1,55 @@
 {
-  "name": "barber-2.0",
+  "name": "Project",
   "version": "1.0.0",
-  "description": "my gulp barber-2.0",
+  "description": "MyNewProject",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-htmlmin": "latest"
+  },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-cssbeautify": "^1.0.1",
-    "gulp-sass": "^4.0.2",
-    "gulp-watch": "^5.0.1"
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-cwebp": "latest",
+    "gulp-filter": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-postcss": "latest",
+    "gulp-posthtml": "latest",
+    "gulp-purgecss": "latest",
+    "gulp-rename": "latest",
+    "gulp-rsync": "latest",
+    "gulp-sass": "latest",
+    "gulp-scp2": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-strip-comments": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
+    "gulp-webp": "latest",
+    "postcss-scss": "latest",
+    "posthtml-include": "latest",
+    "sass": "latest",
+    "vinyl-ftp": "latest"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "gulp build"
   },
+  "overrides": {
+    "graceful-fs": "^4.2.9"
+  },
+  "browserslist": [
+    "since 2015",
+    "IE 10"
+  ],
   "author": "Omn1scient",
   "license": "ISC"
 }

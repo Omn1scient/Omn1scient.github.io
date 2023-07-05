@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Главная страница</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/favicon/hard-drive.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/simplebar.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="inner remont-category" style="opacity: 1">
+
+<header class="header">
+  <div class="header__top-line-links">
+    <div class="container">
+      <nav class="menu-main">
+        <ul class="main-list">
+          <li class="header__menu--home">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__menu--memory">
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Накопители
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <div class="dropdown-menu__header-menu">
+                  <a href="hdd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/hdd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Жесткие диски</span>
+                  </a>
+                  <a href="usb.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/usb-flash-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">USB флешки</span>
+                  </a>
+                  <a href="sd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/sd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Карты памяти SD</span>
+                  </a>
+                  <a href="micro-sd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/micro-sd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Карты памяти MicroSD</span>
+                  </a>
+                  <a href="ssd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/ssd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">SSD носители</span>
+                  </a>
+                  <a href="raid.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/raid-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">RAID массивы</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu--prices">
+            <a href="prices.html">Цены</a>
+          </li>
+          <li class="header__menu--faq">
+            <a href="faq.html">Вопрос и Ответ</a>
+          </li>
+          <li class="header__menu--clients">
+            <a href="/">В Портфолио</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="top-line">
+      <div class="wrap-logo">
+        <a href="index.html">
+          <img src="assets/images/icons/logo-header.png" alt="Лого" width="60" height="60">
+          <div class="header__logo-info">
+            <span>HDD-Repair</span>
+            <p>Восстановление данных</p>
+          </div>
+        </a>
+      </div>
+      <div class="wrap-info">
+        <div class="city">
+          <p class="city-c">ул. Радиотехников 28</p>
+        </div>
+        <ul class="info-list">
+          <li class="info__time">Звоните круглосуточно</li>
+        </ul>
+      </div>
+      <div class="call-wrap">
+        <div class="call-icon">
+          <a href="#modal-callrequest" class="icon" data-toggle="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6" fill="#9b07e7">
+              <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"></path></svg>
+          </a>
+        </div>
+        <div class="call-info">
+          <a href="tel:+" class="">8 (862) 555-55-55</a>
+          <a class="request-call" href="#modal-callrequest" data-toggle="modal">Заказать звонок</a>
+        </div>
+        <div class="hamburger-wrapper">
+          <div class="header-hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header__mobile-menu">
+  <div class="header__mobile-menu-container container">
+    <ul class="header__mobile-menu-list">
+      <li class="header__mobile-menu-item">
+        <a href="index.html" class="">Главная</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="#mobileDevicesMenu" class="" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" role="button">
+          Носители информации
+          <i class="header__menu-item-icon"></i>
+        </a>
+        <div class="collapse" id="mobileDevicesMenu">
+          <div class="header__mobile-category">
+            <div class="header__category-row row no-gutters">
+              <div class="header__category-col col-12">
+                <a href="hdd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/hdd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Жесткие диски</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="usb.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/usb-flash-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">USB флешки</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="sd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/sd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Карты памяти SD</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="micro-sd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/micro-sd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Карты памяти MicroSD</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="ssd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/ssd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">SSD носители</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="raid.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/raid-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">RAID массивы</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="prices.html" class="">Цены</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="faq.html" class="">Вопрос и ответ</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="/" class="">В Портфолио</a>
+      </li>
+    </ul>
+    <p class="header__mobile-menu-addr">ул. Радиотехников 28</p>
+    <div class="header__mobile-btn-wrap">
+      <a href="#modal-callrequest" class="btn" data-toggle="modal">Обратный звонок</a>
+    </div>
+  </div>
+</div>
+<div class="header-holder"></div>
+
+<div class="breadcrumbs p-2">
+  <div class="breadcrumbs__container container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <a title="Главная" itemprop="item" href="/">
+              <i class="home"></i>Главная
+            </a>
+            <meta itemprop="name" content="Главная"> <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumbs__separator"> &gt; </li>
+          <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">Восстановление HDD</span>
+            <meta itemprop="position" content="2">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="inner-category-block padding" style="background-image: url('assets/images/category/category-usb.jpg')">
+  <div class="inner-category-block__cointainer container">
+    <h1 class="inner-category-block__title section-title">
+      Восстановление USB Flash <br> (Флешки)
+    </h1>
+    <p class="inner-category-block__text">
+      Компания «HDD-Repair» предлагает восстановление информации с usb флеш накопителей при любых проблемах: после удаления данных, случайного форматирования или при физических повреждениях
+      диска.
+      После диагностики в нашем сервис центре (15 минут) — мы сориентируем вас по стоимости работ и срокам выполнения.
+    </p>
+  </div>
+</section>
+
+<section class="category-overview padding">
+  <div class="container">
+    <div class="category-overview__info">
+      <h3 class="category-overview__header">Восстановление USB Flash с гарантией результата!</h3>
+      <p>
+        Вас обслуживают инженеры, которые знают и любят свою работу. Сотрудники HDD-Repair - эксперты в области восстановления дисков: Seagate, Western Digital, Samsung, Hitachi, Toshiba,
+        Transcend, Touro. Успешно работаем с запилами магнитных пластин, гелиевыми дисками и другими сложными случаями восстановления данных, которые другие компании считают невыполнимыми.
+        Поддерживаем все типы дисков IDE, SATA, USB, SAS, SCSI от компьютеров до сетевых хранилищ и RAID массивов.
+      </p>
+      <h3 class="category-overview__header">Как восстановить данные с флешки если она не определяется?</h3>
+      <div class="row">
+        <div class="col-12 col-md-9 col-lg-10">
+          <p class="mb-0">
+            Сервис центр HDD-Repair выполняет профессиональное восстановление данных с флешек после любых программных и механических повреждений. Таких как неисправность контроллера, отломанных
+            разъемов,
+            разрушение транслятора и других. Когда флешка не определяется компьютером, просит отформатировать, показывает RAW формат, нулевой объем, и не дает доступ к данным. Уникальное оборудование позволяет нам успешно восстанавливать данные даже с монолитных флеш устройств и microSD карт памяти, где контроллер технически выполнен на одной микросхеме с памятью, и выпаять отдельно чип памяти не представляется возможным.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2">
+          <img src="assets/images/category/overview-usb.png" alt="">
+        </div>
+      </div>
+      <h3 class="category-overview__header">Один из лучших сервис центров в Сочи</h3>
+      <p>
+        Настоящая лаборатория, чистая комната, оснащенная по последнему слову техники, где есть полный комплекс оборудования для работы. Включая последнюю версию комплекса PC3000 Express SAS с DATA
+        Extractor и RAID Edition. А также готовые решения для всех типов файловых систем: FAT32, NTFS, HFS, HFS+, HFSX, EXT, UFS. Восстановление данных со вскрытием гермоблока, выполняется
+        исключительно в чистой комнате. Что гарантирует успешный результат при замене механики накопителя.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="malfunctions padding padding-top section-divider">
+  <div class="malfunctions__container container">
+    <h2 class="malfunctions__title section-title">Почему теряются данные на флешках:</h2>
+    <div class="malfunctions__items">
+      <div class="malfunctions__item">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-usb-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Логические неисправности
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Случайное удаление файлов или быстрое форматирование, ошибки программного обеспечения, сбой файловой системы, формат RAW или нулевой объем. Электрическая часть флеш накопителя исправна. Иногда может сбоить файловая система FAT при некорректном извлечении. Во всех этих случаях восстановление выполняется на комплексе PC-3000 Data Extractor. Производится полное сканирование всей области, где находится информация с флешки, исправляем ошибки файловой системы, составляем карту данных и достаем пользовательские файлы. Как правило, получается произвести восстановление всего объема данных и флешкой можно пользоваться в дальнейшем.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-usb-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Электрические повреждения
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Флешку перестает определять компьютер, но не имеет видимых механических повреждений - также необходимо восстановление. Большой процент USB флешек выходит из строя из за скачков напряжения или статического электричества. После пробоя платы выходят из строя диоды, конденсаторы и другие элементы и информация становиться недоступна. Восстановить флешку в таком случае возможно несколькими способами. В самых простых, после проверки электрических элементов платы можно вернуть работоспособность накопителя, например, заменив диод. Там где электроника повреждена полностью, мы выпаиваем чип памяти с платы и на комплексе восстанавливаем флешку.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-usb-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Неисправность контроллера
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Контроллер флешки отвечает за распределение информации по микросхемам памяти, а так же за скорость передачи данных между ними и интерфейсом компьютера. В случае сбоя контроллера устройство выдает ошибку чтения или перестает определяться компьютером. Восстановление производится выпаиванием микросхем и считыванием. После чего требуется подбор алгоритма контроллера, так как вся информация разбита по чипам памяти, иногда зашифрована. Для этого подходят многие стандартные алгоритмы PC-3000 а под редкие флешки алгоритм пишется нашими программистами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-usb-4.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Механические повреждения
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Сломанные флешки, отломанные USB контакты, механически поврежденные карты памяти довольно частые гости в нашей лаборатории. Главное условие успешного восстановления потерянных данных - это целая микросхема памяти. Если чип поврежден восстановить информацию уже невозможно. Если отломан разьем USB флешки, в некоторых случаях возможно его припаять и скопировать информацию. В остальных случаях поможет только выпаивание чипа и расшифровка на программаторе. В нашем распоряжении есть все адаптеры для восстановления любых микросхем и лучшие специалисты.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands padding" id="brands">
+  <div class="brands__container container">
+    <h2 class="brands__title section-title">Часто ремонтируемые бренды в нашей лаборатории</h2>
+    <div class="brands__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/WD-logo.png" alt="Western Digital" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/adata-logo.png" alt="A-Data" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/transcend-logo.png" alt="Transcend" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/toshiba-logo.png" alt="Toshiba" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/hp-logo.png" alt="HP" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/hitachi-logo.png" alt="Hitachi" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/seagate-logo.png" alt="Seagate" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/samsung-logo.png" alt="Samsung" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/kingston-logo.png" alt="Kingston" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/silicon-power-logo.png" alt="Silicon Power" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/smartbuy-logo.png" alt="Smartbuy" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/sandisk-logo.png" alt="Sandisk" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/kingmax-logo.png" alt="Kingmax" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/mirex-logo.png" alt="Mirex" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-next"></div>
+      <div class="swiper-prev"></div>
+    </div>
+  </div>
+</section>
+
+<section class="model-prices-new prices accordion-prices section-divider padding">
+  <div class="prices__container container">
+    <h2 class="prices__title section-title">Стоимость услуг на восстановление USB Flash</h2>
+    <p class="prices__subtitle">
+      Ниже представлена ориентировочная стоимость наиболее популярных услуг по восстановлению данных и ремонту накопителей. <br>
+      Точная стоимость ремонта будет известна после диагностики устройства.
+    </p>
+    <div id="accordion">
+      <div class="accordion-prices__item">
+        <a class="accordion-prices__tab" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="accordion-prices__tab-info">
+            <div class="accordion-prices__tab-icon">
+              <svg height="60" viewBox="-144 0 512 512" width="60" xmlns="http://www.w3.org/2000/svg"><path d="m80 32h16v64h-16zm0 0"></path><path d="m128 32h16v64h-16zm0 0"></path><path d="m192 112v-112h-160v112h-32v400h224v-400zm-144-96h128v96h-128zm160 480h-192v-368h192zm0 0"></path><path d="m48 318.527344v46.746094l56 24v28.199218c-11.019531 3.894532-17.632812 15.164063-15.65625 26.683594 1.976562 11.523438 11.96875 19.941406 23.65625 19.941406s21.679688-8.417968 23.65625-19.941406c1.976562-11.519531-4.636719-22.789062-15.65625-26.683594v-57.984375l56-52v-35.488281h16v-48h-48v48h16v28.503906l-40 37.152344v-147.65625l15.65625 15.65625 11.3125-11.3125-34.96875-34.96875-34.96875 34.96875 11.3125 11.3125 15.65625-15.65625v181.871094l-40-17.144532v-36.199218c11.019531-3.894532 17.632812-15.164063 15.65625-26.683594-1.976562-11.523438-11.96875-19.941406-23.65625-19.941406s-21.679688 8.417968-23.65625 19.941406c-1.976562 11.519531 4.636719 22.789062 15.65625 26.683594zm112-78.527344h16v16h-16zm-48 192c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8-8-3.582031-8-8 3.582031-8 8-8zm-56-144c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8-8-3.582031-8-8 3.582031-8 8-8zm0 0"></path></svg>
+            </div>
+            <div class="accordion-prices__tab-text">
+              <p>Восстановление USB Flash</p>
+              <span>Восстановим USB флешки таких производителей: Seagate, Western Digital, Transcend, Toshiba, Samsung, Hitachi и и др.</span>
+            </div>
+            <button class="btn">Подробнее</button>
+          </div>
+        </a>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div class="prices__table custom-scrollbar">
+              <div class="prices__table-content">
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Доставка и диагностика</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>Бесплатно</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Настройка ОС</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1300 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Ремонт подсветки в ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена клавиатуры на ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена видеочипа</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>6600 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Настройка ОС</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1300 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Ремонт подсветки в ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена клавиатуры на ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена видеочипа</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>6600 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена видеочипа</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>6600 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disk-additional-info padding padding-bottom">
+  <div class="disk-additional-info__container container">
+    <h2 class="brands__title section-title">Почему флешки выходят из строя?</h2>
+    <p>
+      Отказы флешек встречаются довольно часто, и могут быть без видимых причин: это может быть некорректное извлечение флешки, сгоревшим контроллером от перепада напряжения, так же довольно часто встречаются флешки с noname микросхемами памяти, которые отказывают от времени. В нашей лаборатории можно восстановить информацию с USB флешки любого объема и производителя. Сначала выпаивается микросхема памяти, далее через специальный переходник подключается к PC-3000 Flash Reader и снимается копия образа, данные, после чего из полученного образа информация расшифровывается в виде файлов, в следствие чего происходит восстановление данных.
+    </p>
+    <h2 class="brands__title section-title">Как восстановить файлы с флешки после удаления или форматирования?</h2>
+    <p>
+      Рассмотрим сначала, как вернуть данные с исправной флешки после удаления или форматирования. В эту же категорию часто попадают ситуации, когда данные пропадают после вирусов, становится не доступен раздел файловой системы. Сбой в файловой системе может произойти из-за некорректного отключения устройства или из-за сбоев в работе каких-то программ. Для восстановления информации в таких случаях используется специализированное программное обеспечение. В принципе, любой может скачать какую-нибудь программу для восстановления флешки и попробовать самостоятельно. Главное — не произвести на носителе никаких изменений.
+    </p>
+    <div class="disk-additional-info__wide-image">
+      <img src="assets/images/category/additional-usb-1.jpg" alt="">
+    </div>
+    <p>
+      В простых случаях, если после того как данные пропали, на поврежденный носитель ничего не записывали, то восстановление данных с flash носителя возможно с максимальным сохранением структуры каталогов и имен файлов. Т.е. вы получите данные в прежнем виде с сохранением дерева папок и всех файлов.
+    </p>
+    <p>
+      При повреждении файловой системы структура папок и имена файлов могут отсутствовать. Тогда необходимо полное программное сканирование flash носителя с целью собрать информацию о фрагментах файлов и построить дерево каталогов. Иногда полученной информации может быть недостаточно, и тогда используются другие методы. Опытные специалисты понимают, в каких ситуациях целесообразен тот или иной подход. В случаях, когда производилась запись на flash устройство, к примеру, после форматирования записали новые файлы на тот же флэш носитель, то часть данных может быть недоступна для восстановления.
+    </p>
+    <h2 class="brands__title section-title">Что делать при неисправности чипов памяти или контроллера</h2>
+    <div class="row">
+      <div class="col-12 col-lg">
+        <p>
+          Данные на флешке могут стать недоступны из-за некорректной работы контроллера или чипов памяти. Это может быть следствием физического повреждения flash накопителя, например, при повреждении микросхемы контроллера или самой электронной платы флешки после физического воздействия. А может просто из-за повреждения служебной информации флэш накопителя, используемой контроллером в работе.
+        </p>
+        <p>
+          Данные на флешке могут стать недоступны из-за некорректной работы контроллера или чипов памяти. Это может быть следствием физического повреждения flash накопителя, например, при повреждении микросхемы контроллера или самой электронной платы флешки после физического воздействия. А может просто из-за повреждения служебной информации флэш накопителя, используемой контроллером в работе.
+        </p>
+        <p>
+          Решить такую проблему можно только после вскрытия флешки или карты памяти. Сначала нужно выпаять микросхемы флэш-памяти из flash накопителя, а затем считать данные из микросхем на специальном оборудовании. Полученные данные расшифровываются специальными приложениями, этот процесс может занимать от нескольких минут до нескольких дней. В результате мы получаем доступ к информации, которую нужно было восстановить.
+        </p>
+      </div>
+      <div class="col-12 col-lg">
+        <div class="disk-additional-info__col-image">
+          <img src="assets/images/category/additional-usb-2.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-12">
+        <p class="mt-5">
+          Все флэш-накопители внутри устроены примерно одинаково. Между восстановлением данных с флешки Kingston или, например, Transcend, Apacer, Silicon Power, A-Data, PQI или любой другой, в общем случае нету никакой разницы.
+          Если флешка неисправна, то главное, чтобы сами чипы памяти были целы. При любых неисправностях, как правило, так и есть, и можно произвести успешное восстановление информации с flash носителя.
+        </p>
+      </div>
+    </div>
+    <h2 class="brands__title section-title">Как мы проводим восстановление информации?</h2>
+    <p class="">
+      Восстановление информации в случае случайного форматирования или удаления, если механическая часть исправна, производится на комплексе Data Extractor. Вычитывается полная копия устройства,
+      составляется карта-данные, образ сканируется на наличие ошибок, происходит восстановление данных и сохраняется готовый результат в виде файлов. Если после удаления или форматирования на флешку ничего не записывалось, удается восстановить всю информацию без потерь. При механических повреждениях, когда флешку невозможно определить, имеет отломанные контакты, в случае выгорания контроллера для восстановления выпаивается микросхема NAND памяти. Затем на на специальном комплексе считываем образ-данные, после чего корректируем ошибки и расшифровываем данные из образа. Если флешка монолитная, тогда зачищаются контакты на чипе, подбирается нужная распиновка, подпаиваются контакты к памяти, далее, используя переходник, считываем данные для восстановления. Флешка восстановлена!
+    </p>
+  </div>
+</section>
+
+<section class="how-to padding section-divider">
+  <div class="how-to__container container">
+    <h2 class="how-to__title section-title">Адаптеры для микросхем позволяют нам восстановить любую флешку</h2>
+    <div class="row">
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-usb-1.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            TSOP-48
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-usb-2.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            TSOP-56
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-usb-3.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            LGA-TLGA52
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-usb-4.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            BGA-152
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-usb-5.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            VBGA-100
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="request" id="request-anchor">
+  <div class="request__background padding" style="background-image: url('assets/images/misc/request-bg.jpg')">
+    <div class="request__container container">
+      <div class="request__row row m-0">
+        <div class="request__centerer">
+          <h2 class="request__title section-title text-uppercase">Заявка на восстановление данных</h2>
+          <p class="request__discount">При оформлении заявки - <span>скидка 10%</span></p>
+          <div class="row">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
+              <form action="" class="request__form ajax_form" method="post">
+                <div class="request__form-row row">
+                  <div class="request__form-col col-12 col-md-6">
+                    <div class="request__form-name">
+                      <label class="request__input-label visually-hidden" for="input-name">Ваше имя</label>
+                      <input class="request__input-name" name="name" type="text" id="input-name" value="" placeholder="Ваше имя" autocomplete="off" required="">
+                      <span class="error_name"></span>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-6">
+                    <div class="request__form-phone">
+                      <label class="request__input-label visually-hidden" for="input-phone">Телефон</label>
+                      <input class="request__input-phone f-Mask" name="phone" type="text" id="input-phone" value="" autocomplete="off" placeholder="Телефон" required="" maxlength="17">
+                      <span class="error_phone"></span>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-12">
+                    <div class="request__form-textarea">
+                      <label class="request__input-label visually-hidden" for="input-text">Мобильный телефон</label>
+                      <textarea style="resize: none;" id="input-text" placeholder="Дополнительное сообщение"></textarea>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-12">
+                    <div class="request__input-checkbox-wrap">
+                      <input class="request__input-checkbox custom-checkbox" type="checkbox" id="input-checkbox__request" required="" checked="">
+                      <label class="request__input-checkbox-label custom-checkbox-label" for="input-checkbox__request"></label>
+                      <p class="request__input-checkbox-text">
+                        Нажимая кнопку «Отправить», я даю свое
+                        согласие на обработку моих персональных данных, в соответствии с Федеральным законом от
+                        27.07.2006 года №152-ФЗ «О персональных данных».
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="request__submit-button-wrapper d-flex">
+                  <button type="submit" class="request__submit-button btn btn btn-inverted"><span>Отправить</span></button>
+                </div>
+                <p class="request__discount d-none">При записи с сайта - <span>скидка 10%</span></p>
+              </form>
+            </div>
+            <div class="col-12 col-sm-2 col-md-4 col-lg-5 col-xl-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stages padding section-divider">
+  <div class="stages__container container">
+    <p class="section-pre-text">
+      В компьютерную эпоху информация стала одной из основных ценностей. Её потеря чревата большими проблемами как для частных пользователей, так и для бизнеса. Вот почему спрос на услуги восстановления данных в последние годы только растёт. Компания Центр восстановления данных занимается профессиональным ремонтом повреждённых носителей и возвращает файлы независимо от того, по какой причине они были утрачены.
+    </p>
+    <h2 class="section-title">Этапы работ в нашем сервис центре</h2>
+    <div class="stages-wrap">
+      <div class="stages-item">
+        <span class="stages-number">1</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/delivery-icon2.png" alt="Бесплатная доставка">
+        </div>
+        <p class="stages-head">Доставка</p>
+        <p>Курьер бесплатно доставит ваш носитель в сервис центр и обратно в удобное время и место</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">2</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/diagnostics-icon2.png" alt="Диагностика">
+        </div>
+        <p class="stages-head">Диагностика</p>
+        <p>Мастера бесплатно осмотрят носитель и сформируют стоимость восстановления данных</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">3</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/repair-icon2.png" alt="Восстановление">
+        </div>
+        <p class="stages-head">Восстановление</p>
+        <p>Применяются различные методики для восстановления данных на профессиональном оборудовании</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">4</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/quality-icon2.png" alt="Контроль">
+        </div>
+        <p class="stages-head">Контроль</p>
+        <p>Контроль качества на всех этапах работ и конфиденциальность вашей информации</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">5</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/wallet-icon2.png" alt="Оплата">
+        </div>
+        <p class="stages-head">Оплата</p>
+        <p>Услуги оплачиваются только при успешном восстановлоении данных без потерь</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__head">
+    <div class="foot__container container">
+      <div class="footer__head-text">
+        <p>
+          Профессиональное восстановление данных с любых носителей. Официальный партнер по восстановлению данных Seagate и Western Digital в России.
+        </p>
+      </div>
+      <div class="footer__head-text">
+        <p>
+          Инженеры HDD-Repair - эксперты в
+          своей отрасли, большинство из которых имеют более чем десятилетний опыт работы. Мы успешно работаем с самыми сложными случаями восстанавления данных, даже после неудачных попыток других
+          компаний. Вам не нужно ждать и тратить время на поиски доноров. Все запчасти в наличии, располагаем самым большим складом запчастей в Сочи. Уникальная чистая комната и
+          современное оборудование позволяют восстановить то, что другие считают невозможным.
+        </p>
+      </div>
+      <div class="footer__head-social">
+        <div class="footer__head-social-row row">
+          <div class="footer__head-social-col col-12 col-sm-12">
+            <div class="footer__head-country">
+              <div class="footer__head-country-wrapper">
+                <div class="footer__head-country-icon-wrap">
+                  <img class="flag-icon" src="assets/images/icons/world.png" width="25" height="25">
+                </div>
+                <p class="footer__head-country-address-wrap">
+                  <span>Россия, Сочи, ул. Радиотехников 28</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__top">
+    <div class="footer__container container">
+      <div class="footer__top-row row">
+        <div class="footer__top-col col-6 col-sm-6 col-md-4">
+          <div class="footer__top-menu">
+            <a class="footer__top-head-link" href="#">Клиентам</a>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="prices.html">Цены</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="faq.html">Вопрос и ответ</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="/">В Портфолио</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__top-col col-6 col-sm-6 col-md-4">
+          <div class="footer__top-menu">
+            <a class="footer__top-head-link" href="#">Носители <span>информации</span></a>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="hdd.html">Жесткие диски</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="usb.html">USB Флешки</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="sd.html">Карты памяти</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="ssd.html">SSD Накопители</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="raid.html">RAID Массивы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__top-col col-12 col-sm-6 col-md-4">
+          <div class="footer__top-contacts">
+            <p class="footer__top-head-text">Наши контакты</p>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-phone">
+                <i class="svg svg-phone"></i>
+                <a rel="nofollow" href="tel:+">8 (862) 555-55-55</a>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-email">
+                <i class="svg svg-email"></i>
+                <a href="mailto:">supp@hdd-repair.ru</a>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-address">
+                <i class="svg svg-locate"></i>
+                <span>Сервис центр работает: c 9:00 - 20:00</span>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-hotline">
+                <i class="svg svg-headphones"></i>
+                <span>Горячая линия: c 08:00 - 22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom py-4">
+    <div class="footer__container container">
+      <div class="footer__bottom-row row">
+        <div class="footer__bottom-col col-sm-6 col-md-4">
+          <div class="footer__bottom-copy">
+            <p>2012 - 2021 © Сервисный центр HDD-Repair. Восстановление данных с носителей.</p>
+          </div>
+        </div>
+        <div class="footer__bottom-col col-sm-6 col-md-4">
+          <div class="footer__bottom-policy">
+            <a href="#">Политика конфиденциальности, порядок обработки персональных данных</a>
+          </div>
+        </div>
+        <div class="footer__bottom-col col-sm-12 col-md-4">
+          <div class="footer__bottom-payicons-wrapper">
+            <div class="footer__bottom-payicons">
+              <img src="assets/images/icons/payments.png" alt="" width="240" height="32">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="to-top">
+  <div class="to-top__back"></div>
+</div>
+
+<div id="modal-callrequest" class="modal modal-callback fade">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-header__title modal-callrequest__title">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 11 11">
+              <path d="M2.2 1.2l3.3 3.3L8.8 1.2C8.9 1.1 9.1 1 9.3 1 9.7 1 10 1.3 10 1.7c0 0.2-0.1 0.4-0.2 0.5L6.5 5.5 9.8 8.8C9.9 8.9 10 9.1 10 9.3 10 9.7 9.7 10 9.3 10c-0.2 0-0.4-0.1-0.5-0.2L5.5 6.5 2.2 9.8c-0.1 0.1-0.3 0.2-0.5 0.2C1.3 10 1 9.7 1 9.3 1 9.1 1.1 8.9 1.2 8.8L4.5 5.5 1.2 2.2C1.1 2.1 1 1.9 1 1.7 1 1.3 1.3 1 1.7 1 1.9 1 2.1 1.1 2.2 1.2z"></path></svg>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal__container">
+          <div class="modal-callrequest__subtitle">
+            <p class="request__text">Менеджер позвонит вам втечение 10 минут</p>
+          </div>
+          <form action="" class="request__form">
+            <div class="request__form-row row">
+              <div class="request__form-col col-12">
+                <div class="field-wrapper request__form-name">
+                  <label class="request__input-label" for="input-name">Ваше имя <span class="star">*</span></label>
+                  <input class="request__input-name" type="text" id="input-name" placeholder="" required="">
+                </div>
+              </div>
+              <div class="request__form-col col-12">
+                <div class="field-wrapper request__form-phone">
+                  <label class="request__input-label" for="input-phone">Телефон <span class="star">*</span></label>
+                  <input class="request__input-phone phoneMask" type="text" id="input-phone" placeholder="" required="">
+                </div>
+              </div>
+              <div class="request__form-col col-12">
+                <div class="request__form-checkbox-wrapper">
+                  <input class="request__input-checkbox custom-checkbox" type="checkbox" id="input-checkbox__callback" required="" checked="">
+                  <label class="request__input-checkbox-label custom-checkbox-label" for="input-checkbox__callback"></label>
+                  <p class="request__input-checkbox-text">
+                    Я даю согласие на обработку <a href="personal-data.html">персональных данных.</a>
+                  </p>
+                </div>
+              </div>
+              <div class="request__form-col request__form-col--button-wrapper col-12">
+                <button type="submit" class="request__submit-button font-weight-bold btn"><span>Заказать звонок</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/simplebar.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  background-size: 720px auto;
+  min-height: 750px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-size: 1178px auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-size: 1391px auto;
+  }
+}

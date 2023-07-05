@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Главная страница</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/favicon/hard-drive.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/simplebar.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="inner remont-category" style="opacity: 1">
+
+<header class="header">
+  <div class="header__top-line-links">
+    <div class="container">
+      <nav class="menu-main">
+        <ul class="main-list">
+          <li class="header__menu--home">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__menu--memory">
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Накопители
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <div class="dropdown-menu__header-menu">
+                  <a href="hdd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/hdd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Жесткие диски</span>
+                  </a>
+                  <a href="usb.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/usb-flash-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">USB флешки</span>
+                  </a>
+                  <a href="sd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/sd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Карты памяти SD</span>
+                  </a>
+                  <a href="micro-sd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/micro-sd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">Карты памяти MicroSD</span>
+                  </a>
+                  <a href="ssd.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/ssd-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">SSD носители</span>
+                  </a>
+                  <a href="raid.html" class="header__category-item">
+                    <div class="header__category-icon">
+                      <img src="assets/images/icons/raid-icon.png" alt="" width="50" height="50">
+                    </div>
+                    <span class="header__category-device">RAID массивы</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu--prices">
+            <a href="prices.html">Цены</a>
+          </li>
+          <li class="header__menu--faq">
+            <a href="faq.html">Вопрос и Ответ</a>
+          </li>
+          <li class="header__menu--clients">
+            <a href="/">В Портфолио</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="top-line">
+      <div class="wrap-logo">
+        <a href="index.html">
+          <img src="assets/images/icons/logo-header.png" alt="Лого" width="60" height="60">
+          <div class="header__logo-info">
+            <span>HDD-Repair</span>
+            <p>Восстановление данных</p>
+          </div>
+        </a>
+      </div>
+      <div class="wrap-info">
+        <div class="city">
+          <p class="city-c">ул. Радиотехников 28</p>
+        </div>
+        <ul class="info-list">
+          <li class="info__time">Звоните круглосуточно</li>
+        </ul>
+      </div>
+      <div class="call-wrap">
+        <div class="call-icon">
+          <a href="#modal-callrequest" class="icon" data-toggle="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6" fill="#9b07e7">
+              <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"></path></svg>
+          </a>
+        </div>
+        <div class="call-info">
+          <a href="tel:+" class="">8 (862) 555-55-55</a>
+          <a class="request-call" href="#modal-callrequest" data-toggle="modal">Заказать звонок</a>
+        </div>
+        <div class="hamburger-wrapper">
+          <div class="header-hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header__mobile-menu">
+  <div class="header__mobile-menu-container container">
+    <ul class="header__mobile-menu-list">
+      <li class="header__mobile-menu-item">
+        <a href="index.html" class="">Главная</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="#mobileDevicesMenu" class="" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" role="button">
+          Носители информации
+          <i class="header__menu-item-icon"></i>
+        </a>
+        <div class="collapse" id="mobileDevicesMenu">
+          <div class="header__mobile-category">
+            <div class="header__category-row row no-gutters">
+              <div class="header__category-col col-12">
+                <a href="hdd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/hdd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Жесткие диски</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="usb.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/usb-flash-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">USB флешки</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="sd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/sd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Карты памяти SD</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="micro-sd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/micro-sd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">Карты памяти MicroSD</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="ssd.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/ssd-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">SSD носители</span>
+                </a>
+              </div>
+              <div class="header__category-col col-12">
+                <a href="raid.html" class="header__category-item">
+                  <div class="header__category-icon">
+                    <img src="assets/images/icons/raid-icon.png" alt="" width="50" height="50">
+                  </div>
+                  <span class="header__category-device">RAID массивы</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="prices.html" class="">Цены</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="faq.html" class="">Вопрос и ответ</a>
+      </li>
+      <li class="header__mobile-menu-item">
+        <a href="/" class="">В Портфолио</a>
+      </li>
+    </ul>
+    <p class="header__mobile-menu-addr">ул. Радиотехников 28</p>
+    <div class="header__mobile-btn-wrap">
+      <a href="#modal-callrequest" class="btn" data-toggle="modal">Обратный звонок</a>
+    </div>
+  </div>
+</div>
+<div class="header-holder"></div>
+
+<div class="breadcrumbs p-2">
+  <div class="breadcrumbs__container container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <a title="Главная" itemprop="item" href="/">
+              <i class="home"></i>Главная
+            </a>
+            <meta itemprop="name" content="Главная"> <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumbs__separator"> &gt; </li>
+          <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">Восстановление HDD</span>
+            <meta itemprop="position" content="2">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="inner-category-block padding" style="background-image: url('assets/images/category/category-hdd.jpg')">
+  <div class="inner-category-block__cointainer container">
+    <h1 class="inner-category-block__title section-title">
+      Восстановление HDD <br> (Жестких дисков)
+    </h1>
+    <p class="inner-category-block__text">
+      Компания «HDD-Repair» предлагает восстановление информации с жестких дисков при любых проблемах: после удаления данных, случайного форматирования или при физических повреждениях диска.
+      После диагностики в нашем сервис центре (15 минут) — мы сориентируем вас по стоимости работ и срокам выполнения.
+    </p>
+  </div>
+</section>
+
+<section class="category-overview padding">
+  <div class="container">
+    <div class="category-overview__info">
+      <h3 class="category-overview__header">Восстановление жесткого диска с гарантией результата!</h3>
+      <p>
+        Вас обслуживают инженеры, которые знают и любят свою работу. Сотрудники HDD-Repair - эксперты в области восстановления дисков: Seagate, Western Digital, Samsung, Hitachi, Toshiba,
+        Transcend, Touro.
+        Успешно работаем с запилами магнитных пластин, гелиевыми дисками и другими сложными случаями восстановления данных, которые другие компании считают невыполнимыми. Поддерживаем все типы дисков IDE, SATA, SAS, SCSI от компьютеров до сетевых хранилищ и RAID массивов.
+      </p>
+      <h3 class="category-overview__header">Минимальные сроки выполнения работ!</h3>
+      <div class="row">
+        <div class="col-12 col-md-9 col-lg-10">
+          <p class="mb-0">
+            Большое количество жестких дисков в наличии позволяет нам не тратить время на поиск и заказ запчастей. Сразу приступаем к восстановлению данных без ожиданий и очередей. Вычитывание дисков проводится максимально быстро на программно-аппаратных комплексах нового поколения PC-3000 Express. Это позволяет безопасно восстановить данные с жесткого диска компьютера или ноутбука. В своей работе мы используем только неразрушающие процессы чтения.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2">
+          <img src="assets/images/category/overview-hdd.png" alt="">
+        </div>
+      </div>
+      <h3 class="category-overview__header">Один из лучших сервис центров в Сочи</h3>
+      <p class="mb-0">
+        Настоящая лаборатория, чистая комната, оснащенная по последнему слову техники, где есть полный комплекс оборудования для работы на жестких дисках SCSI, SAS, Fibre Channel. Включая последнюю версию комплекса PC3000 Express SAS с DATA Extractor и RAID Edition. А также готовые решения для всех типов файловых систем: FAT32, NTFS, HFS, HFS+, HFSX, EXT, UFS. Восстановление данных со вскрытием гермоблока, выполняется исключительно в чистой комнате. Что гарантирует успешный результат при замене механики диска.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="malfunctions padding padding-top section-divider">
+  <div class="malfunctions__container container">
+    <h2 class="malfunctions__title section-title">Самые распространённые проблемы:</h2>
+    <div class="malfunctions__items">
+      <div class="malfunctions__item">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-hdd-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Повреждения секторов
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Информация с поврежденных секторов жесткого диска не считывается или считывается некорректно. Скорость считывания может становиться меньше и пк отказывается работать с такими кластерами. Попадая на битый кластер, магнитные головки пытаются прочитать записанную в нём информацию, после неудачной попытки пропускают его. Для востановления жесткого диска изпользуется программно-аппаратный комплекс - Data Extractor. Принцип его действия в копировании неисправных секторов с минимальными потерями. На основе чего создается клон потерянного запоминающего устройства.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-hdd-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Неисправности платы
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Один или несколько компонентов электронной платы выходят из строя или движущиеся части жесткого диска не запускаются. При этом не слышно никаких звуков и может доноситься горелый запах. Данный сбой может вызвать:
+              </p>
+              <ul>
+                <li>перегорание компонентов платы;</li>
+                <li>электропробой;</li>
+                <li>ошибка в подключении питания;</li>
+                <li>дефект блока питания.</li>
+              </ul>
+              <p>
+                Для выполнения ремонта, необходимо устранить аварийный фактор путём замены сломанной части на аналогичную.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-hdd-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Некорректная работа блока магнитных головок
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Неисправность можно быстро определить по неестественным звукам: щелчки и треск, доносящийся от накопителя. Устройство не может считать серворазметку, пытаясь произвести рекалибровку. Может потребоваться большое количество комплектующих, которые устанавливаются в стерильном помещении. Наши специалисты проведут диагностику и выполнят восстановление жесткого диска вашего компьютера. Если проверка даёт аналогичные исходным результаты, проводим замену заново.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-hdd-4.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Поломка коммутатора
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Коммутатор необходим для усиление сигнала между считывающими головками и контроллером. Неисправность коммутатора жесткого диска проявляется из-за некорректной работой электронной платы. Большинство накопителей сконструировано так, что заменить коммутатор попросту невозможно. В такой ситуации мы меняем весь блок на аналогичный. Комплектующие должны быть идентичны по модели и иметь такую же прошивку.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-hdd-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Клин шпинделя
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Обычно подобная поломка возникает после сильного удара или сотрясения HDD привода. Ось вала блокируется шайбой или втулкой подшипника, зачастую он просто гудит. Такой случай требует больших трудозатрат, у старых моделей иногда приходится высверливать шайбу, освобождая шпиндель. У более современных жестких дисков для восстановление данных потребуется переустановка пластин в гермоблоке.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="malfunctions__item section-divider">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="malfunctions__item-img">
+              <img src="assets/images/malfunctions/mal-hdd-6.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-lg-10">
+            <p class="malfunctions__item-header">
+              Залипание головок
+            </p>
+            <div class="malfunctions__item-text">
+              <p>
+                Ещё одна ударное повреждение запоминающего устройства, также может быть спровоцирована нештатным отключением электропитания. Магнитные головки не перемещаются в область парковки и пристают к поверхности привода. Устранение данной поломки осложняет вероятность поцарапать поверхность магнитного диска запоминающего устройства. Мы восстановим жесткий диск путем перемещения головки в парковочную зону. При повреждении головки, заменим весь блок в стерильном помещении.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands padding" id="brands">
+  <div class="brands__container container">
+    <h2 class="brands__title section-title">Часто ремонтируемые бренды в нашей лаборатории</h2>
+    <div class="brands__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/WD-logo.png" alt="Western Digital" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/adata-logo.png" alt="A-Data" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/transcend-logo.png" alt="Transcend" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/toshiba-logo.png" alt="Toshiba" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/hp-logo.png" alt="HP" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/hitachi-logo.png" alt="Hitachi" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/seagate-logo.png" alt="Seagate" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/samsung-logo.png" alt="Samsung" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/kingston-logo.png" alt="Kingston" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/silicon-power-logo.png" alt="Silicon Power" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/smartbuy-logo.png" alt="Smartbuy" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/sandisk-logo.png" alt="Sandisk" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/kingmax-logo.png" alt="Kingmax" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="brands__item">
+              <div class="brands__img-wrap">
+                <img src="assets/images/brands/mirex-logo.png" alt="Mirex" class="brands__img" width="200" height="200">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-next"></div>
+      <div class="swiper-prev"></div>
+    </div>
+  </div>
+</section>
+
+<section class="model-prices-new prices accordion-prices section-divider padding">
+  <div class="prices__container container">
+    <h2 class="prices__title section-title">Стоимость услуг на восстановление накопителя HDD</h2>
+    <p class="prices__subtitle">
+      Ниже представлена ориентировочная стоимость наиболее популярных услуг по восстановлению данных и ремонту накопителей. <br>
+      Точная стоимость ремонта будет известна после диагностики устройства.
+    </p>
+
+    <div id="accordion">
+      <div class="accordion-prices__item">
+        <a class="accordion-prices__tab" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="accordion-prices__tab-info">
+            <div class="accordion-prices__tab-icon">
+              <svg id="icons" enable-background="new 0 0 64 64" height="60" width="60" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="m9.998 5.001v6.002 43.996 4c0 2.757 2.243 5 5 5h34.004c2.757 0 5-2.243 5-5v-4-43.996-6.002c0-2.757-2.243-5-5-5h-34.004c-2.757 0-5 2.243-5 5zm8.009 42.027c.007 1.271.491 2.541 1.459 3.509.944.944 2.199 1.464 3.535 1.464.037 0 .072-.01.109-.011.017.001.03.01.048.01h6.588l6.004 5.999h-20.752c-1.654 0-3-1.346-3-3v-20.593l6.003 6.007v6.588c0 .01.005.018.006.027zm19.146-14.179c-.327-.329-.839-.387-1.231-.145-.803.495-4.926 3.037-8.863 5.557-7.118-2.161-12.059-8.778-12.059-16.258 0-9.374 7.626-17 17-17s17 7.626 17 17c0 8.5-6.416 15.667-14.654 16.827 1.465-2.336 2.634-4.232 2.952-4.75.243-.394.182-.904-.145-1.231zm-3.805 3.805c-3.392 5.431-7.346 11.59-8.225 12.469-1.133 1.133-3.11 1.133-4.243 0-1.17-1.17-1.17-3.073 0-4.243.879-.879 7.037-4.833 12.468-8.226zm15.654 25.345h-34.004c-1.654 0-3-1.346-3-3v-.025c.838.635 1.87 1.025 3 1.025h23.154c.006 0 .011.003.016.003s.01-.003.016-.003h10.818c1.13 0 2.162-.391 3-1.025v.025c0 1.654-1.346 3-3 3zm3-56.998v6.002 43.996c0 1.654-1.346 3-3 3h-10.423l-7.711-7.705c-.092-.093-.203-.166-.326-.217-.122-.051-.252-.077-.382-.077h-3.167c1.212-1.552 3.747-5.464 6.012-9.042 9.971-.531 17.995-8.907 17.995-18.955 0-10.477-8.523-19-19-19s-19 8.523-19 19c0 7.808 4.818 14.771 11.937 17.627-2.125 1.383-3.979 2.634-4.936 3.382v-3.013c0-.004-.002-.007-.002-.01-.001-.127-.026-.253-.075-.372-.051-.123-.124-.234-.217-.326l-7.709-7.714v-20.574-6.002c0-1.654 1.346-3 3-3h34.004c1.654 0 3 1.346 3 3z"></path><path d="m32 16.003c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"></path><path d="m32.029 21.002c.552 0 1-.447 1-1s-.448-1-1-1h-.011c-.552 0-.994.447-.994 1s.453 1 1.005 1z"></path><path d="m32.029 23.002h-.011c-.552 0-.994.447-.994 1s.452 1 1.005 1c.552 0 1-.447 1-1s-.448-1-1-1z"></path><path d="m34.029 21.002h-.011c-.552 0-.994.447-.994 1s.452 1 1.005 1c.552 0 1-.447 1-1s-.448-1-1-1z"></path><path d="m23.028 48.001c.552 0 1-.447 1-1s-.448-1-1-1h-.011c-.552 0-.994.447-.994 1s.453 1 1.005 1z"></path><path d="m15.028 54h-.011c-.552 0-.994.447-.994 1s.452 1 1.005 1c.552 0 1-.447 1-1s-.448-1-1-1z"></path><path d="m30.029 21.002h-.011c-.552 0-.994.447-.994 1s.452 1 1.005 1c.552 0 1-.447 1-1s-.448-1-1-1z"></path>
+              </svg>
+            </div>
+            <div class="accordion-prices__tab-text">
+              <p>Восстановление HDD (жесткие диски)</p>
+              <span>Восстановим жесткие диски таких производителей: Seagate, Western Digital, Transcend, Toshiba, Samsung, Hitachi и др.</span>
+            </div>
+            <button class="btn">Подробнее</button>
+          </div>
+        </a>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div class="prices__table custom-scrollbar">
+              <div class="prices__table-content">
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Доставка и диагностика</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>Бесплатно</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Настройка ОС</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1300 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Ремонт подсветки в ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена клавиатуры на ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена видеочипа</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>6600 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Настройка ОС</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1300 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Ремонт подсветки в ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена клавиатуры на ноутбуке</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>1850 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена видеочипа</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>6600 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prices__table-row--item row">
+                  <div class="prices__table-col col-7 col-md-6">
+                    <p class="prices__table-service prices__table-service--mal">
+                      <a href="" class="prices__table-link">Замена видеочипа</a>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-5 col-md-3">
+                    <p class="prices__table-service prices__table-service--price">
+                      <span>6600 руб.</span>
+                    </p>
+                  </div>
+                  <div class="prices__table-col col-4 col-md-3 d-none d-md-block">
+                    <p class="prices__table-service prices__table-service--time">
+                      <span>От 2 часов</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disk-additional-info padding padding-bottom">
+  <div class="disk-additional-info__container container">
+    <h2 class="brands__title section-title">Почему теряются данные?</h2>
+    <p>Как правило, проблема заключается в физической неисправности диска. Для этого может не быть никаких внешних причин. Это сложное устройство, которое дало сбой: двигатель, блок головок, микропрограмма или плата электроники вышли из строя. Диск начал сыпаться или перестал работать одномоментно, появились посторонние звуки или носитель наоборот замолчал. При этом ПК не работает или тормозит, а при открытии файлов выдает ошибку. Во всех перечисленных случаях есть возможность произвести восстановление данных с диска.</p>
+    <p>Следующая по популярности причина потери информации – внешнее воздействие или человеческий фактор, который заключается в неаккуратном использовании оборудования или программ:</p>
+    <ul>
+      <li>Удалили файлы или отформатировали диск;</li>
+      <li>Переустановили Windows, перепрошили, обновили или сбросили к заводским настройкам устройство;</li>
+      <li>Не установили или вовремя не обновили антивирус, что повлекло за собой повреждение файлов вирусами;</li>
+      <li>Внешний HDD, корпус компьютера или ноутбук уронили на пол, выронили из машины на ходу, ударили, наступили;</li>
+      <li>Пожар, наводнение, скачок напряжения или короткое замыкание в сети.</li>
+    </ul>
+    <h2 class="brands__title section-title">Как производится восстановление данных c жесткого диска?</h2>
+    <p>Восстановление цифровых данных с винчестера возможно в девяти случаях из десяти. Даже если диск сильно поврежден, то не спешите отчаиваться и смиряться с потерей фотоархива, результатов выполненной работы, коллекции редкой музыки или фильмов. Наши инженеры восстановят информацию.</p>
+    <p>Восстановление с поврежденного диска сводится к устранению неисправности и чтению данных на специальном программно-аппаратном комплексе. Иногда проблема устраняется – диск работает как раньше, а данные доступны. Но такой ремонт возможен крайне редко. Как правило, диск временно приводится в состояние, пригодное для считывания информации на другой исправный носитель. Для этого в зависимости от проблемы потребуется:</p>
+    <ul>
+      <li>замена неисправных магнитных головок или перестановка пластин в аналогичный рабочий корпус диска;</li>
+      <li>исправление ошибок в микропрограмме;</li>
+      <li>замена платы с перепайкой или перепрограммированием ПЗУ;</li>
+      <li>устранение залипания магнитных головок на поверхности пластин;</li>
+      <li>преодоление последствий непрофессионального вмешательства в устройство и так далее.</li>
+    </ul>
+    <p>Также при помощи специальных средств восстановления решаем проблемы дисков с нечитаемыми секторами. Такие неисправности приводят к зависанию программ, а при попытке открытия или копирования файлов возникает ошибка. Попытки восстановления стандартными средствами в таких случаях приводят к ухудшению ситуации и усложнению дальнейшей работы. Опыт наших инженеров и корректное использование профессиональных средств дают максимум результата, не создавая дополнительных рисков для неисправного устройства.</p>
+    <div class="disk-additional-info__wide-image">
+      <img src="assets/images/category/additional-hdd-1.jpg" alt="portable">
+    </div>
+    <p>При проблемах на исправных носителях используем специальные программы, предназначенные для восстановления жестких дисков после форматирования, удаления, действия вирусов или логических ошибок. Метод основывается на поиске информации, доступной из файловых записей, находимых в ходе сканирования носителя. В результате воссоздается точная структура каталогов, имена сохраняются, файлы на прежних местах.</p>
+    <p>Если в результате логического сбоя файловая таблица перезаписана и описанный выше способ не дает положительного результата, ищутся заголовки каждого отдельного файла на жестком диске. Это позволит получить содержимое файлов, но с потерей имен и структуры папок, что однозначно лучше полной потери информации.</p>
+    <p>Как правило, проблемы жестких дисков носят комплексный характер. Нечитаемые сектора приводят к логическим разрушениям, сбой в питании повреждает и внешнюю, и внутреннюю электронику диска, сбой микропрограммы и повреждение дефект-листа вызывает массовое появление нечитаемых секторов или областей на диске, неисправные головки повреждают поверхность пластин и так далее.</p>
+    <p>Залог результативного восстановления данных на диске – работа опытных профессионалов в лаборатории, оснащенной необходимым специализированным оборудованием и программными средствами. Поэтому
+      в случае возникновения проблем на жестком диске не играйте в русскую рулетку – не вмешивайтесь в устройство и не обращайтесь за помощью к исполнителям без опыта работы с неисправными дисками HDD.</p>
+  </div>
+</section>
+
+<section class="how-to padding section-divider">
+  <div class="how-to__container container">
+    <h2 class="how-to__title section-title">Профессиональные приборы для восстановлнеия данных</h2>
+    <div class="row">
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-1.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            Паяльные станции EZRA
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-2.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            Вольтметры и мультиметры
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-3.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            Комплекс PC-3000 Flash Reader 3.0
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-4.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            Адаптеры и переходники для комплекса
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="how-to__item">
+          <div class="how-to__item-img mb-3">
+            <img src="assets/images/misc/how-to-5.jpg" alt="" style="border-radius: 10px">
+          </div>
+          <p class="text-center">
+            Осциллограф для проверки сигналов
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="request" id="request-anchor">
+  <div class="request__background padding" style="background-image: url('assets/images/misc/request-bg.jpg')">
+    <div class="request__container container">
+      <div class="request__row row m-0">
+        <div class="request__centerer">
+          <h2 class="request__title section-title text-uppercase">Заявка на восстановление данных</h2>
+          <p class="request__discount">При оформлении заявки - <span>скидка 10%</span></p>
+          <div class="row">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
+              <form action="" class="request__form ajax_form" method="post">
+                <div class="request__form-row row">
+                  <div class="request__form-col col-12 col-md-6">
+                    <div class="request__form-name">
+                      <label class="request__input-label visually-hidden" for="input-name">Ваше имя</label>
+                      <input class="request__input-name" name="name" type="text" id="input-name" value="" placeholder="Ваше имя" autocomplete="off" required="">
+                      <span class="error_name"></span>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-6">
+                    <div class="request__form-phone">
+                      <label class="request__input-label visually-hidden" for="input-phone">Телефон</label>
+                      <input class="request__input-phone f-Mask" name="phone" type="text" id="input-phone" value="" autocomplete="off" placeholder="Телефон" required="" maxlength="17">
+                      <span class="error_phone"></span>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-12">
+                    <div class="request__form-textarea">
+                      <label class="request__input-label visually-hidden" for="input-text">Мобильный телефон</label>
+                      <textarea style="resize: none;" id="input-text" placeholder="Дополнительное сообщение"></textarea>
+                    </div>
+                  </div>
+                  <div class="request__form-col col-12 col-md-12">
+                    <div class="request__input-checkbox-wrap">
+                      <input class="request__input-checkbox custom-checkbox" type="checkbox" id="input-checkbox__request" required="" checked="">
+                      <label class="request__input-checkbox-label custom-checkbox-label" for="input-checkbox__request"></label>
+                      <p class="request__input-checkbox-text">
+                        Нажимая кнопку «Отправить», я даю свое
+                        согласие на обработку моих персональных данных, в соответствии с Федеральным законом от
+                        27.07.2006 года №152-ФЗ «О персональных данных».
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="request__submit-button-wrapper d-flex">
+                  <button type="submit" class="request__submit-button btn btn btn-inverted"><span>Отправить</span></button>
+                </div>
+                <p class="request__discount d-none">При записи с сайта - <span>скидка 10%</span></p>
+              </form>
+            </div>
+            <div class="col-12 col-sm-2 col-md-4 col-lg-5 col-xl-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stages padding section-divider">
+  <div class="stages__container container">
+    <p class="section-pre-text">
+      В компьютерную эпоху информация стала одной из основных ценностей. Её потеря чревата большими проблемами как для частных пользователей, так и для бизнеса. Вот почему спрос на услуги
+      восстановления данных в последние годы только растёт. Компания HDD-Repair восстановления данных занимается профессиональным ремонтом повреждённых носителей и возвращает файлы независимо от
+      того, по
+      какой причине они были утрачены.
+    </p>
+    <h2 class="section-title">Этапы работ в нашем сервис центре</h2>
+    <div class="stages-wrap">
+      <div class="stages-item">
+        <span class="stages-number">1</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/delivery-icon2.png" alt="Бесплатная доставка">
+        </div>
+        <p class="stages-head">Доставка</p>
+        <p>Курьер бесплатно доставит ваш носитель в сервис центр и обратно в удобное время и место</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">2</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/diagnostics-icon2.png" alt="Диагностика">
+        </div>
+        <p class="stages-head">Диагностика</p>
+        <p>Мастера бесплатно осмотрят носитель и сформируют стоимость восстановления данных</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">3</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/repair-icon2.png" alt="Восстановление">
+        </div>
+        <p class="stages-head">Восстановление</p>
+        <p>Применяются различные методики для восстановления данных на профессиональном оборудовании</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">4</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/quality-icon2.png" alt="Контроль">
+        </div>
+        <p class="stages-head">Контроль</p>
+        <p>Контроль качества на всех этапах работ и конфиденциальность вашей информации</p>
+      </div>
+      <div class="stages-item">
+        <span class="stages-number">5</span>
+        <div class="stages-image">
+          <img class="img-fluid" src="assets/images/icons/wallet-icon2.png" alt="Оплата">
+        </div>
+        <p class="stages-head">Оплата</p>
+        <p>Услуги оплачиваются только при успешном восстановлоении данных без потерь</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__head">
+    <div class="foot__container container">
+      <div class="footer__head-text">
+        <p>
+          Профессиональное восстановление данных с любых носителей. Официальный партнер по восстановлению данных Seagate и Western Digital в России.
+        </p>
+      </div>
+      <div class="footer__head-text">
+        <p>
+          Инженеры HDD-Repair - эксперты в
+          своей отрасли, большинство из которых имеют более чем десятилетний опыт работы. Мы успешно работаем с самыми сложными случаями восстанавления данных, даже после неудачных попыток других
+          компаний. Вам не нужно ждать и тратить время на поиски доноров. Все запчасти в наличии, располагаем самым большим складом запчастей в Сочи. Уникальная чистая комната и
+          современное оборудование позволяют восстановить то, что другие считают невозможным.
+        </p>
+      </div>
+      <div class="footer__head-social">
+        <div class="footer__head-social-row row">
+          <div class="footer__head-social-col col-12 col-sm-12">
+            <div class="footer__head-country">
+              <div class="footer__head-country-wrapper">
+                <div class="footer__head-country-icon-wrap">
+                  <img class="flag-icon" src="assets/images/icons/world.png" width="25" height="25">
+                </div>
+                <p class="footer__head-country-address-wrap">
+                  <span>Россия, Сочи, ул. Радиотехников 28</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__top">
+    <div class="footer__container container">
+      <div class="footer__top-row row">
+        <div class="footer__top-col col-6 col-sm-6 col-md-4">
+          <div class="footer__top-menu">
+            <a class="footer__top-head-link" href="#">Клиентам</a>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="prices.html">Цены</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="faq.html">Вопрос и ответ</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="/">В Портфолио</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__top-col col-6 col-sm-6 col-md-4">
+          <div class="footer__top-menu">
+            <a class="footer__top-head-link" href="#">Носители <span>информации</span></a>
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a href="hdd.html">Жесткие диски</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="usb.html">USB Флешки</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="sd.html">Карты памяти</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="ssd.html">SSD Накопители</a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a href="raid.html">RAID Массивы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__top-col col-12 col-sm-6 col-md-4">
+          <div class="footer__top-contacts">
+            <p class="footer__top-head-text">Наши контакты</p>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-phone">
+                <i class="svg svg-phone"></i>
+                <a rel="nofollow" href="tel:+">8 (862) 555-55-55</a>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-email">
+                <i class="svg svg-email"></i>
+                <a href="mailto:">supp@hdd-repair.ru</a>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-address">
+                <i class="svg svg-locate"></i>
+                <span>Сервис центр работает: c 9:00 - 20:00</span>
+              </div>
+            </div>
+            <div class="footer__top-menu-contacts">
+              <div class="footer__top-menu-hotline">
+                <i class="svg svg-headphones"></i>
+                <span>Горячая линия: c 08:00 - 22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom py-4">
+    <div class="footer__container container">
+      <div class="footer__bottom-row row">
+        <div class="footer__bottom-col col-sm-6 col-md-4">
+          <div class="footer__bottom-copy">
+            <p>2012 - 2021 © Сервисный центр HDD-Repair. Восстановление данных с носителей.</p>
+          </div>
+        </div>
+        <div class="footer__bottom-col col-sm-6 col-md-4">
+          <div class="footer__bottom-policy">
+            <a href="#">Политика конфиденциальности, порядок обработки персональных данных</a>
+          </div>
+        </div>
+        <div class="footer__bottom-col col-sm-12 col-md-4">
+          <div class="footer__bottom-payicons-wrapper">
+            <div class="footer__bottom-payicons">
+              <img src="assets/images/icons/payments.png" alt="" width="240" height="32">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="to-top">
+  <div class="to-top__back"></div>
+</div>
+
+<div id="modal-callrequest" class="modal modal-callback fade">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-header__title modal-callrequest__title">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 11 11">
+              <path d="M2.2 1.2l3.3 3.3L8.8 1.2C8.9 1.1 9.1 1 9.3 1 9.7 1 10 1.3 10 1.7c0 0.2-0.1 0.4-0.2 0.5L6.5 5.5 9.8 8.8C9.9 8.9 10 9.1 10 9.3 10 9.7 9.7 10 9.3 10c-0.2 0-0.4-0.1-0.5-0.2L5.5 6.5 2.2 9.8c-0.1 0.1-0.3 0.2-0.5 0.2C1.3 10 1 9.7 1 9.3 1 9.1 1.1 8.9 1.2 8.8L4.5 5.5 1.2 2.2C1.1 2.1 1 1.9 1 1.7 1 1.3 1.3 1 1.7 1 1.9 1 2.1 1.1 2.2 1.2z"></path></svg>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal__container">
+          <div class="modal-callrequest__subtitle">
+            <p class="request__text">Менеджер позвонит вам втечение 10 минут</p>
+          </div>
+          <form action="" class="request__form">
+            <div class="request__form-row row">
+              <div class="request__form-col col-12">
+                <div class="field-wrapper request__form-name">
+                  <label class="request__input-label" for="input-name">Ваше имя <span class="star">*</span></label>
+                  <input class="request__input-name" type="text" id="input-name" placeholder="" required="">
+                </div>
+              </div>
+              <div class="request__form-col col-12">
+                <div class="field-wrapper request__form-phone">
+                  <label class="request__input-label" for="input-phone">Телефон <span class="star">*</span></label>
+                  <input class="request__input-phone phoneMask" type="text" id="input-phone" placeholder="" required="">
+                </div>
+              </div>
+              <div class="request__form-col col-12">
+                <div class="request__form-checkbox-wrapper">
+                  <input class="request__input-checkbox custom-checkbox" type="checkbox" id="input-checkbox__callback" required="" checked="">
+                  <label class="request__input-checkbox-label custom-checkbox-label" for="input-checkbox__callback"></label>
+                  <p class="request__input-checkbox-text">
+                    Я даю согласие на обработку <a href="personal-data.html">персональных данных.</a>
+                  </p>
+                </div>
+              </div>
+              <div class="request__form-col request__form-col--button-wrapper col-12">
+                <button type="submit" class="request__submit-button font-weight-bold btn"><span>Заказать звонок</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/simplebar.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

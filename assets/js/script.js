@@ -353,4 +353,20 @@ $('.nav-tabs a').click(function(){
 
 
 
+$(window).scroll(function() {
+  var footerHeight = $('footer').height();
+  var scrollTop = $(window).scrollTop();
+  var pageHeight = $(document).height();
+  var bottomDifference = pageHeight - footerHeight;
 
+  if (scrollTop >= 500 && scrollTop < bottomDifference - 600) {
+    $('.to-top').addClass('show');
+  } else {
+    $('.to-top').removeClass('show');
+  }
+});
+
+$('.to-top').click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});

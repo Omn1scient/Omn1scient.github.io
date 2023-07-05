@@ -1,13 +1,13 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
-const cssbeautify = require('gulp-cssbeautify');
+//const cssbeautify = require('gulp-cssbeautify');
 
 
 // compile scss to css
 function style() {
   // 1. where is my scss file
-  return gulp.src('./sass/*.scss') // - checks only root sass folder
+  return gulp.src('./sass/*.scss')
   // 2. pass that file through sass compiler
   .pipe(sass().on('error', sass.logError))
   // 3. where do I save the compiled css?
@@ -19,11 +19,13 @@ function style() {
 // beautify css code style
 function beautify() {
   return gulp.src('./css/*.css')
+    /*
     .pipe(cssbeautify({
       indent: '  ',
       //openbrace: 'separate-line',
       autosemicolon: true
     }))
+    */
     .pipe(gulp.dest('./css/'));
 }
 

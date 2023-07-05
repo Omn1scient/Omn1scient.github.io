@@ -3,10 +3,8 @@
 
 .main-nav {
   position: relative; 
-  width: 320px;
-  //min-width: 320px;
-  // for responsive
-  //width: 320px;
+  min-width: 320px;
+  width: 100%;
   min-height: 51px;
   margin: 0 auto;
   background-color: #826550;
@@ -47,6 +45,15 @@
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3),
               0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
+
+
+.main-nav--opened {
+  .site-list__item--active a {
+    background-color: #614b3c;
+    color: rgba(255,255,255,0.2);
+  }
+}
+
 
 .main-nav--opened .main-nav__toggle {
   top: 0;

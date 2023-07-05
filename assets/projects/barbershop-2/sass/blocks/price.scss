@@ -3,7 +3,8 @@
 
 .price {
   position: relative;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 70px 20px;
   background-color: #353535;
@@ -12,29 +13,30 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -10.8vw;
     left: 0;
-    right: 0;
-    width: 100%;
-    height: 34px;
-    background-color: #f8f5f2;
     background-image: url('../svg/price-angle-div.svg');
     background-repeat: no-repeat;
-    background-size: 102%;
+    bottom: -1px;
+    width: 100%;
+    height: 11vw;
+    background-size: cover;
+    background-position: center bottom -1px;
+    pointer-events: none;
   }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
     left: 0;
-    right: 0;
+    bottom: -1px;
     width: 100%;
-    height: 34px;
-    background-color: #353535;
+    height: 12vw;
     background-image: url('../svg/reviews-angle-div.svg');
     background-repeat: no-repeat;
-    background-size: 102%;
+    background-size: calc(100% + 0.3vw);
+    background-position: center bottom;
+    pointer-events: none;
   }
 
 }

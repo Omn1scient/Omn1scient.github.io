@@ -26,24 +26,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ready() {
-  // smooth page appearing
-  /*
-  let pageBody = document.querySelector('body');
-  pageBody.style.opacity = "0";
-
-  setTimeout(pageLoadOpacity, 100);
-
-  function pageLoadOpacity() {
-    pageBody.style.opacity = "1";
-    pageBody.style.transition = "all .3s ease";
-
-    setTimeout(() => pageBody.style.transition = null, 1000);
-  }
-
-  */
-
-
-  //$('.phoneMask').mask('7 (999) 999-99-99');
 }
 
 document.addEventListener("DOMContentLoaded", ready);
@@ -82,59 +64,6 @@ $(document).on('click', 'a[data-scroll^="#"]', function (event) {
   }, 700);
 });
 
-/*
-
-let swiper = new Swiper(".mySlider", {
-  slidesPerView: 3,
-  spaceBetween: 5,
-  grid: {
-    rows: 3,
-    fill: "row",
-  },
-
-  breakpoints: {
-    576: {
-      slidesPerView: 4,
-      grid: {
-        rows: 3,
-        fill: "row",
-      },
-    },
-
-    768: {
-      slidesPerView: 4,
-      grid: {
-        rows: 3,
-        fill: "row",
-      },
-    },
-    992: {
-      slidesPerView: 4,
-      grid: {
-        rows: 4,
-        fill: "row",
-      },
-    },
-    1200: {
-      slidesPerView: 4,
-      grid: {
-        rows: 3,
-        fill: "row",
-      },
-    }
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next-unique',
-    prevEl: '.swiper-button-prev-unique',
-  },
-});
-
-*/
-
 
 // Получаем все элементы .tab-pane
 let tabPanes = document.querySelectorAll('.tab-pane');
@@ -145,7 +74,7 @@ tabPanes.forEach(function(tabPane) {
   tabPane.addEventListener('touchstart', handleTouchStart, false);
   tabPane.addEventListener('touchmove', handleTouchMove, false);
 
-  // Сохраняем начальные координаты касания
+  // Обьявляем начальные координаты касания
   let startX;
 
   // Обработчик touchstart события
@@ -215,7 +144,7 @@ $(window).scroll(function() {
 });
 
 $('.to-top').click(function() {
-  $("html, body").animate({ scrollTop: 0 }, 300, 'swing');
+  $("html, body").animate({ scrollTop: 0 }, 100, 'swing');
   return false;
 });
 /******/ })()
